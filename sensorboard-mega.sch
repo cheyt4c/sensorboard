@@ -890,4 +890,55 @@ Wire Wire Line
 	5550 3600 5850 3600
 Text Label 5850 3600 0    60   ~ 0
 2(**)
+$Comp
+L New_Library:SD_Card_Breakout J?
+U 1 1 5DFE5C2E
+P 2100 6500
+F 0 "J?" H 2928 6546 50  0000 L CNN
+F 1 "SD_Card_Breakout" H 2928 6455 50  0000 L CNN
+F 2 "" H 2100 6500 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 2100 6500 50  0001 C CNN
+	1    2100 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DFF28AA
+P 1200 6900
+F 0 "#PWR?" H 1200 6650 50  0001 C CNN
+F 1 "GND" H 1205 6727 50  0000 C CNN
+F 2 "" H 1200 6900 50  0001 C CNN
+F 3 "" H 1200 6900 50  0001 C CNN
+	1    1200 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DFF2EFF
+P 900 6300
+F 0 "#PWR?" H 900 6150 50  0001 C CNN
+F 1 "+3V3" H 915 6473 50  0000 C CNN
+F 2 "" H 900 6300 50  0001 C CNN
+F 3 "" H 900 6300 50  0001 C CNN
+	1    900  6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  6300 1200 6300
+Wire Wire Line
+	800  6500 1200 6500
+Wire Wire Line
+	800  6600 1200 6600
+Wire Wire Line
+	800  6700 1200 6700
+Wire Wire Line
+	800  6800 1200 6800
+Text Label 800  6800 0    50   ~ 0
+3v3_MISO
+Text Label 800  6600 0    50   ~ 0
+3v3_MOSI
+Text Label 800  6700 0    50   ~ 0
+3v3_SCK
+Text Label 800  6500 0    50   ~ 0
+3v3_SS
 $EndSCHEMATC

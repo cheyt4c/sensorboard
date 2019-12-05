@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP HSCDANN001BA2A3
+D Absolute Barometric Pressure Sensor, LGA-8
+K I2C, SPI, pressure, temperature, sensor
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf
+$ENDCMP
+#
 $CMP MPU-9250_Breakout
 D Sparkfun MPU-9250 breakout board SEN-13762
 K mems magnetometer

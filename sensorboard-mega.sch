@@ -839,4 +839,55 @@ F 3 "" H 2700 4300 50  0001 C CNN
 	1    2700 4300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5850 3050 6050 3050
+Text Label 6050 3050 0    50   ~ 0
+IOREF
+$Comp
+L Device:R R?
+U 1 1 5DF91E75
+P 5850 3200
+F 0 "R?" H 5920 3246 50  0000 L CNN
+F 1 "10k" H 5920 3155 50  0000 L CNN
+F 2 "" V 5780 3200 50  0001 C CNN
+F 3 "~" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3350 5550 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5DF988E0
+P 5250 3050
+F 0 "#PWR?" H 5250 2800 50  0001 C CNN
+F 1 "GND" H 5255 2877 50  0000 C CNN
+F 2 "" H 5250 3050 50  0001 C CNN
+F 3 "" H 5250 3050 50  0001 C CNN
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:DHT22 U?
+U 1 1 5DF9B2BC
+P 5550 3050
+F 0 "U?" V 5169 3050 50  0000 C CNN
+F 1 "DHT22" V 5260 3050 50  0000 C CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 5550 2650 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 5700 3300 50  0001 C CNN
+	1    5550 3050
+	0    1    1    0   
+$EndComp
+Connection ~ 5850 3050
+Text Notes 700  5500 0    50   ~ 0
+Note: Bridge the HV and LV pins using wire for Arduino Due
+Wire Wire Line
+	5550 3300 5550 3350
+Connection ~ 5550 3350
+Wire Wire Line
+	5550 3350 5550 3600
+Wire Wire Line
+	5550 3600 5850 3600
+Text Label 5850 3600 0    60   ~ 0
+2(**)
 $EndSCHEMATC

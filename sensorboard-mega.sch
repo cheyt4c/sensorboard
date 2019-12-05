@@ -677,13 +677,13 @@ F 3 "" H 1700 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2200 3500 0    50   ~ 0
-3v3_SS
+3V3_SS
 Text Label 2200 3400 0    50   ~ 0
-3v3_SCK
+3V3_SCK
 Text Label 2200 3100 0    50   ~ 0
-3v3_MOSI
+3V3_MOSI
 Text Label 2200 3000 0    50   ~ 0
-3v3_MISO
+3V3_MISO
 Wire Wire Line
 	2000 3000 2200 3000
 Wire Wire Line
@@ -772,9 +772,9 @@ F 3 "" H 1700 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2200 4500 0    50   ~ 0
-3v3_SCL
+3V3_SCL
 Text Label 2200 4400 0    50   ~ 0
-3v3_SDA
+3V3_SDA
 Wire Wire Line
 	2000 4400 2200 4400
 Wire Wire Line

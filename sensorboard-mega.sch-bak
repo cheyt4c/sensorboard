@@ -880,7 +880,7 @@ F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 5700 3300 50  0001
 $EndComp
 Connection ~ 5850 3050
 Text Notes 700  5500 0    50   ~ 0
-Note: Bridge the HV and LV pins using wire for Arduino Due
+Note: Bridge the HV and LV signal pins using wire for Arduino Due
 Wire Wire Line
 	5550 3300 5550 3350
 Connection ~ 5550 3350

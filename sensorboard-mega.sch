@@ -645,8 +645,198 @@ Text Label 9300 6150 0    50   ~ 0
 50(MISO)
 Text Label 9300 6250 0    50   ~ 0
 52(SCK)
-Text Label 10050 6250 0    50   ~ 0
+Text Label 10350 6250 0    50   ~ 0
 51(MOSI)
 Text Label 9300 6350 0    50   ~ 0
 Reset
+Text Label 1100 3000 0    50   ~ 0
+50(MISO)
+Text Label 1100 3100 0    50   ~ 0
+51(MOSI)
+Text Label 1100 3400 0    50   ~ 0
+52(SCK)
+Text Label 1100 3500 0    60   ~ 0
+10(**)
+Wire Wire Line
+	1100 3500 1400 3500
+Wire Wire Line
+	1400 3400 1100 3400
+Wire Wire Line
+	1100 3100 1400 3100
+Wire Wire Line
+	1400 3000 1100 3000
+$Comp
+L New_Library:Level_Converter U?
+U 1 1 5DEE3BFA
+P 1700 2750
+F 0 "U?" H 1700 2765 50  0000 C CNN
+F 1 "Level_Converter" H 1700 2674 50  0000 C CNN
+F 2 "" H 1700 2750 50  0001 C CNN
+F 3 "" H 1700 2750 50  0001 C CNN
+	1    1700 2750
+	1    0    0    -1  
+$EndComp
+Text Label 2200 3500 0    50   ~ 0
+3v3_SS
+Text Label 2200 3400 0    50   ~ 0
+3v3_SCK
+Text Label 2200 3100 0    50   ~ 0
+3v3_MOSI
+Text Label 2200 3000 0    50   ~ 0
+3v3_MISO
+Wire Wire Line
+	2000 3000 2200 3000
+Wire Wire Line
+	2000 3100 2200 3100
+Wire Wire Line
+	2000 3400 2200 3400
+Wire Wire Line
+	2000 3500 2200 3500
+Wire Wire Line
+	1400 3200 900  3200
+Wire Wire Line
+	900  3200 900  2900
+Wire Wire Line
+	1400 3300 900  3300
+Wire Wire Line
+	900  3300 900  3700
+Wire Wire Line
+	2700 3300 2700 3700
+Wire Wire Line
+	2000 3300 2700 3300
+Wire Wire Line
+	2000 3200 2700 3200
+Wire Wire Line
+	2700 3200 2700 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5DF6CA90
+P 900 3700
+F 0 "#PWR?" H 900 3450 50  0001 C CNN
+F 1 "GND" H 905 3527 50  0000 C CNN
+F 2 "" H 900 3700 50  0001 C CNN
+F 3 "" H 900 3700 50  0001 C CNN
+	1    900  3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF6CD61
+P 2700 3700
+F 0 "#PWR?" H 2700 3450 50  0001 C CNN
+F 1 "GND" H 2705 3527 50  0000 C CNN
+F 2 "" H 2700 3700 50  0001 C CNN
+F 3 "" H 2700 3700 50  0001 C CNN
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF6D2BB
+P 900 2900
+F 0 "#PWR?" H 900 2750 50  0001 C CNN
+F 1 "+5V" H 915 3073 50  0000 C CNN
+F 2 "" H 900 2900 50  0001 C CNN
+F 3 "" H 900 2900 50  0001 C CNN
+	1    900  2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DF6D689
+P 2700 2900
+F 0 "#PWR?" H 2700 2750 50  0001 C CNN
+F 1 "+3V3" H 2715 3073 50  0000 C CNN
+F 2 "" H 2700 2900 50  0001 C CNN
+F 3 "" H 2700 2900 50  0001 C CNN
+	1    2700 2900
+	1    0    0    -1  
+$EndComp
+Text Label 1100 4400 0    50   ~ 0
+20(SDA)
+Text Label 1100 4500 0    50   ~ 0
+21(SCL)
+Wire Wire Line
+	1100 4500 1400 4500
+Wire Wire Line
+	1400 4400 1100 4400
+$Comp
+L New_Library:Level_Converter U?
+U 1 1 5DF6F05E
+P 1700 4150
+F 0 "U?" H 1700 4165 50  0000 C CNN
+F 1 "Level_Converter" H 1700 4074 50  0000 C CNN
+F 2 "" H 1700 4150 50  0001 C CNN
+F 3 "" H 1700 4150 50  0001 C CNN
+	1    1700 4150
+	1    0    0    -1  
+$EndComp
+Text Label 2200 4500 0    50   ~ 0
+3v3_SCL
+Text Label 2200 4400 0    50   ~ 0
+3v3_SDA
+Wire Wire Line
+	2000 4400 2200 4400
+Wire Wire Line
+	2000 4500 2200 4500
+Wire Wire Line
+	1400 4600 900  4600
+Wire Wire Line
+	900  4600 900  4300
+Wire Wire Line
+	1400 4700 900  4700
+Wire Wire Line
+	900  4700 900  5100
+Wire Wire Line
+	2700 4700 2700 5100
+Wire Wire Line
+	2000 4700 2700 4700
+Wire Wire Line
+	2000 4600 2700 4600
+Wire Wire Line
+	2700 4600 2700 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5DF6F074
+P 900 5100
+F 0 "#PWR?" H 900 4850 50  0001 C CNN
+F 1 "GND" H 905 4927 50  0000 C CNN
+F 2 "" H 900 5100 50  0001 C CNN
+F 3 "" H 900 5100 50  0001 C CNN
+	1    900  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF6F07A
+P 2700 5100
+F 0 "#PWR?" H 2700 4850 50  0001 C CNN
+F 1 "GND" H 2705 4927 50  0000 C CNN
+F 2 "" H 2700 5100 50  0001 C CNN
+F 3 "" H 2700 5100 50  0001 C CNN
+	1    2700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF6F080
+P 900 4300
+F 0 "#PWR?" H 900 4150 50  0001 C CNN
+F 1 "+5V" H 915 4473 50  0000 C CNN
+F 2 "" H 900 4300 50  0001 C CNN
+F 3 "" H 900 4300 50  0001 C CNN
+	1    900  4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DF6F086
+P 2700 4300
+F 0 "#PWR?" H 2700 4150 50  0001 C CNN
+F 1 "+3V3" H 2715 4473 50  0000 C CNN
+F 2 "" H 2700 4300 50  0001 C CNN
+F 3 "" H 2700 4300 50  0001 C CNN
+	1    2700 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

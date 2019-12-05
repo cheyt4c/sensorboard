@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Arduino_Mega-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -591,8 +590,63 @@ Wire Wire Line
 	8650 4850 8650 5350
 Wire Wire Line
 	8650 5350 8650 5750
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 5DE9DB3C
+P 9750 6250
+F 0 "J?" H 9800 6567 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 9800 6476 50  0000 C CNN
+F 2 "" H 9750 6250 50  0001 C CNN
+F 3 "~" H 9750 6250 50  0001 C CNN
+	1    9750 6250
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
-	11200 6050 8350 6050
+	8350 6500 11200 6500
 Wire Notes Line
-	8350 6050 8350 500 
+	8350 500  8350 6500
+Text Notes 9550 5850 0    50   ~ 0
+ICSP SPI header
+Wire Wire Line
+	9550 6150 9300 6150
+Wire Wire Line
+	10050 6150 10450 6150
+$Comp
+L power:+5V #PWR?
+U 1 1 5DEC3C23
+P 10450 6150
+F 0 "#PWR?" H 10450 6000 50  0001 C CNN
+F 1 "+5V" H 10465 6323 50  0000 C CNN
+F 2 "" H 10450 6150 50  0001 C CNN
+F 3 "" H 10450 6150 50  0001 C CNN
+	1    10450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DEC45AE
+P 10400 6350
+F 0 "#PWR?" H 10400 6100 50  0001 C CNN
+F 1 "GND" H 10405 6177 50  0000 C CNN
+F 2 "" H 10400 6350 50  0001 C CNN
+F 3 "" H 10400 6350 50  0001 C CNN
+	1    10400 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 6350 10400 6350
+Wire Wire Line
+	10050 6250 10350 6250
+Wire Wire Line
+	9300 6250 9550 6250
+Wire Wire Line
+	9550 6350 9300 6350
+Text Label 9300 6150 0    50   ~ 0
+50(MISO)
+Text Label 9300 6250 0    50   ~ 0
+52(SCK)
+Text Label 10050 6250 0    50   ~ 0
+51(MOSI)
+Text Label 9300 6350 0    50   ~ 0
+Reset
 $EndSCHEMATC

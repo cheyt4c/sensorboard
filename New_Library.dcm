@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP MPU-9250_Breakout
+D Sparkfun MPU-9250 breakout board SEN-13762
+K mems magnetometer
+F https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf
+$ENDCMP
+#
 $CMP SD_Card_Breakout
 D SD Card Reader
 K connector SD

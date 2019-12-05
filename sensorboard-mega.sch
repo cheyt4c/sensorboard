@@ -840,55 +840,55 @@ F 3 "" H 2700 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3050 6050 3050
-Text Label 6050 3050 0    50   ~ 0
+	5750 1900 5950 1900
+Text Label 5950 1900 0    50   ~ 0
 IOREF
 $Comp
 L Device:R R?
 U 1 1 5DF91E75
-P 5850 3200
-F 0 "R?" H 5920 3246 50  0000 L CNN
-F 1 "10k" H 5920 3155 50  0000 L CNN
-F 2 "" V 5780 3200 50  0001 C CNN
-F 3 "~" H 5850 3200 50  0001 C CNN
-	1    5850 3200
+P 5750 2050
+F 0 "R?" H 5820 2096 50  0000 L CNN
+F 1 "10k" H 5820 2005 50  0000 L CNN
+F 2 "" V 5680 2050 50  0001 C CNN
+F 3 "~" H 5750 2050 50  0001 C CNN
+	1    5750 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3350 5550 3350
+	5750 2200 5450 2200
 $Comp
 L power:GND #PWR?
 U 1 1 5DF988E0
-P 5250 3050
-F 0 "#PWR?" H 5250 2800 50  0001 C CNN
-F 1 "GND" H 5255 2877 50  0000 C CNN
-F 2 "" H 5250 3050 50  0001 C CNN
-F 3 "" H 5250 3050 50  0001 C CNN
-	1    5250 3050
+P 5150 1900
+F 0 "#PWR?" H 5150 1650 50  0001 C CNN
+F 1 "GND" H 5155 1727 50  0000 C CNN
+F 2 "" H 5150 1900 50  0001 C CNN
+F 3 "" H 5150 1900 50  0001 C CNN
+	1    5150 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Sensor:DHT22 U?
 U 1 1 5DF9B2BC
-P 5550 3050
-F 0 "U?" V 5169 3050 50  0000 C CNN
-F 1 "DHT22" V 5260 3050 50  0000 C CNN
-F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 5550 2650 50  0001 C CNN
-F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 5700 3300 50  0001 C CNN
-	1    5550 3050
+P 5450 1900
+F 0 "U?" V 5069 1900 50  0000 C CNN
+F 1 "DHT22" V 5160 1900 50  0000 C CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 5450 1500 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 5600 2150 50  0001 C CNN
+	1    5450 1900
 	0    1    1    0   
 $EndComp
-Connection ~ 5850 3050
+Connection ~ 5750 1900
 Text Notes 700  5500 0    50   ~ 0
 Note: Bridge the HV and LV signal pins using wire for Arduino Due
 Wire Wire Line
-	5550 3300 5550 3350
-Connection ~ 5550 3350
+	5450 2150 5450 2200
+Connection ~ 5450 2200
 Wire Wire Line
-	5550 3350 5550 3600
+	5450 2200 5450 2450
 Wire Wire Line
-	5550 3600 5850 3600
-Text Label 5850 3600 0    60   ~ 0
+	5450 2450 5750 2450
+Text Label 5750 2450 0    60   ~ 0
 2(**)
 $Comp
 L New_Library:SD_Card_Breakout J?
@@ -941,4 +941,148 @@ Text Label 800  6700 0    50   ~ 0
 3v3_SCK
 Text Label 800  6500 0    50   ~ 0
 3v3_SS
+$Comp
+L Timer_RTC:DS3231M U?
+U 1 1 5DEAA5E1
+P 5650 3350
+F 0 "U?" H 5900 3000 50  0000 C CNN
+F 1 "DS3231M" H 5900 2900 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 5650 2750 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 5920 3400 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L New_Library:HSCDANN001BA2A3 U?
+U 1 1 5DEAAED6
+P 5550 4550
+F 0 "U?" H 5780 4646 50  0000 L CNN
+F 1 "HSCDANN001BA2A3" H 5780 4555 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5550 3850 50  0001 C CNN
+F 3 "https://sensing.honeywell.com/honeywell-sensing-trustability-hsc-series-high-accurboard-mount-pressure-sensors-50099148-a-en.pdf" H 5550 4550 50  0001 C CNN
+	1    5550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L New_Library:MPU-9250_Breakout U?
+U 1 1 5DEAC0F0
+P 5600 6200
+F 0 "U?" H 5600 5211 50  0000 C CNN
+F 1 "MPU-9250_Breakout" H 5600 5120 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 5600 5200 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 5600 6050 50  0001 C CNN
+	1    5600 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3150 4750 3150
+Wire Wire Line
+	4750 3150 4750 4550
+Wire Wire Line
+	5150 4550 4750 4550
+Connection ~ 4750 4550
+Wire Wire Line
+	4850 3250 5150 3250
+Wire Wire Line
+	5150 4450 4850 4450
+Connection ~ 4850 4450
+Wire Wire Line
+	4850 4450 4850 3250
+Wire Wire Line
+	4750 3150 4350 3150
+Connection ~ 4750 3150
+Wire Wire Line
+	4850 3250 4350 3250
+Connection ~ 4850 3250
+Text Label 4350 3250 0    50   ~ 0
+3V3_SDA
+Text Label 4350 3150 0    50   ~ 0
+3V3_SCL
+NoConn ~ 5650 2950
+NoConn ~ 6150 3150
+NoConn ~ 6150 3450
+NoConn ~ 6300 6100
+NoConn ~ 6300 6200
+NoConn ~ 6300 5900
+$Comp
+L power:GND #PWR?
+U 1 1 5DF6484B
+P 4900 6400
+F 0 "#PWR?" H 4900 6150 50  0001 C CNN
+F 1 "GND" H 4905 6227 50  0000 C CNN
+F 2 "" H 4900 6400 50  0001 C CNN
+F 3 "" H 4900 6400 50  0001 C CNN
+	1    4900 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF67973
+P 5650 4850
+F 0 "#PWR?" H 5650 4600 50  0001 C CNN
+F 1 "GND" H 5655 4677 50  0000 C CNN
+F 2 "" H 5650 4850 50  0001 C CNN
+F 3 "" H 5650 4850 50  0001 C CNN
+	1    5650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6100 4750 6100
+Wire Wire Line
+	4750 4550 4750 6100
+Wire Wire Line
+	4900 5900 4850 5900
+Wire Wire Line
+	4850 4450 4850 5900
+Wire Wire Line
+	5500 5300 5700 5300
+Wire Wire Line
+	5700 5300 6100 5300
+Connection ~ 5700 5300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DFA056E
+P 6100 5300
+F 0 "#PWR?" H 6100 5150 50  0001 C CNN
+F 1 "+3V3" H 6115 5473 50  0000 C CNN
+F 2 "" H 6100 5300 50  0001 C CNN
+F 3 "" H 6100 5300 50  0001 C CNN
+	1    6100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4150 6100 4150
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DFA9209
+P 6100 4150
+F 0 "#PWR?" H 6100 4000 50  0001 C CNN
+F 1 "+3V3" H 6115 4323 50  0000 C CNN
+F 2 "" H 6100 4150 50  0001 C CNN
+F 3 "" H 6100 4150 50  0001 C CNN
+	1    6100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DFAA3A6
+P 5650 3750
+F 0 "#PWR?" H 5650 3500 50  0001 C CNN
+F 1 "GND" H 5655 3577 50  0000 C CNN
+F 2 "" H 5650 3750 50  0001 C CNN
+F 3 "" H 5650 3750 50  0001 C CNN
+	1    5650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DFAFB69
+P 5550 2950
+F 0 "#PWR?" H 5550 2800 50  0001 C CNN
+F 1 "+3V3" H 5565 3123 50  0000 C CNN
+F 2 "" H 5550 2950 50  0001 C CNN
+F 3 "" H 5550 2950 50  0001 C CNN
+	1    5550 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,9 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP HSCDANN001BA2A3
-D Absolute Barometric Pressure Sensor, LGA-8
-K I2C, SPI, pressure, temperature, sensor
-F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf
+D Absolute Barometric Pressure Sensor, DIP-8
+K I2C, pressure, sensor
+F https://sensing.honeywell.com/honeywell-sensing-trustability-hsc-series-high-accurboard-mount-pressure-sensors-50099148-a-en.pdf
 $ENDCMP
 #
 $CMP MPU-9250_Breakout

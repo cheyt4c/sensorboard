@@ -1330,4 +1330,19 @@ $EndComp
 Connection ~ 7200 5950
 Wire Wire Line
 	7200 5950 7200 6200
+Wire Wire Line
+	1200 6200 1200 5750
+Wire Wire Line
+	1200 5750 600  5750
+$Comp
+L power:GND #PWR?
+U 1 1 5E131F4E
+P 600 5750
+F 0 "#PWR?" H 600 5500 50  0001 C CNN
+F 1 "GND" H 605 5577 50  0000 C CNN
+F 2 "" H 600 5750 50  0001 C CNN
+F 3 "" H 600 5750 50  0001 C CNN
+	1    600  5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

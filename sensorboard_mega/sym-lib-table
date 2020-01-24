@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/New_Library.lib)(options "")(descr ""))
+  (lib (name Sensor)(type Legacy)(uri ${KIPRJMOD}/Sensor.lib)(options "")(descr ""))
+  (lib (name sensorboard-mega-rescue)(type Legacy)(uri ${KIPRJMOD}/sensorboard-mega-rescue.lib)(options "")(descr ""))
+)

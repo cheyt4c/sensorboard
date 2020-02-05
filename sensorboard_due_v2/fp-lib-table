@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ARDUINO_DUE)(type KiCad)(uri ${KIPRJMOD}/libs/ARDUINO_DUE)(options "")(descr ""))
+  (lib (name arduino_sensors)(type KiCad)(uri ${KIPRJMOD}/libs/arduino_sensors/arduino_sensors.pretty)(options "")(descr ""))
+)

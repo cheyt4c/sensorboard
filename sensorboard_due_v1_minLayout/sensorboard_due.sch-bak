@@ -1208,4 +1208,10 @@ Wire Wire Line
 	4000 7150 4000 7200
 Wire Wire Line
 	4250 6500 4250 6150
+Text Notes 1850 6550 0    50   ~ 0
+WARNING: do not confuse 5V pin\nwith 3V3 or GND (i.e. 1 pin gap)!
+Text Notes 4200 3600 0    50   ~ 0
+100k pull-ups provided\non SDA/SCL of Due.
+Text Notes 1600 3100 0    50   ~ 0
+Pull-ups not provided - must rely\non connection of OBC for pull-ups.
 $EndSCHEMATC

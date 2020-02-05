@@ -1,0 +1,35 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DHT22
+F https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html
+$ENDCMP
+#
+$CMP DS3231_RTC_BREAKOUT
+D Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16
+K RTC TCXO Realtime Time Clock Crystal Oscillator I2C
+F https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/overview
+$ENDCMP
+#
+$CMP GPS_UBLOX_NEO6M
+F https://core-electronics.com.au/u-blox-neo-6m-gps-module.html
+$ENDCMP
+#
+$CMP HSCDANN001BA2A3
+D Absolute Barometric Pressure Sensor, DIP-8
+K I2C, pressure, sensor
+F https://sensing.honeywell.com/honeywell-sensing-trustability-hsc-series-high-accurboard-mount-pressure-sensors-50099148-a-en.pdf
+$ENDCMP
+#
+$CMP MPU-9250_Breakout
+D Sparkfun MPU-9250 breakout board SEN-13762
+K mems magnetometer
+F https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html
+$ENDCMP
+#
+$CMP SD_Card_Breakout
+D SD Card Reader
+K connector SD
+F https://core-electronics.com.au/sd-card-module.html
+$ENDCMP
+#
+#End Doc Library

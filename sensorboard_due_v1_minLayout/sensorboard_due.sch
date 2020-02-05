@@ -124,12 +124,8 @@ Wire Wire Line
 	5150 1100 5250 1100
 Text Label 4550 5150 2    50   ~ 0
 DHT_1
-Text Label 5600 5150 0    50   ~ 0
-DHT_2
 Text Label 4550 5250 2    50   ~ 0
 DHT_3
-Text Label 5600 5250 0    50   ~ 0
-DHT_4
 Wire Wire Line
 	5600 5150 5100 5150
 Wire Wire Line
@@ -160,25 +156,7 @@ Wire Wire Line
 Text Notes 9300 6450 0    50   ~ 0
 Use "jumper cap" to connect pull-up resistor \nif DHT22 does not already have one.
 Wire Wire Line
-	9800 5750 9950 5750
-Connection ~ 9950 5750
-Wire Wire Line
-	9950 5750 10250 5750
-Text Label 9800 5750 2    50   ~ 0
-DHT_4
-Wire Wire Line
 	10250 5950 10200 5950
-$Comp
-L Device:R R10
-U 1 1 5E347804
-P 9950 5600
-F 0 "R10" H 9880 5554 50  0000 R CNN
-F 1 "10k" H 9880 5645 50  0000 R CNN
-F 2 "" V 9880 5600 50  0001 C CNN
-F 3 "~" H 9950 5600 50  0001 C CNN
-	1    9950 5600
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR028
 U 1 1 5E3477FA
@@ -212,42 +190,10 @@ F 3 "" H 10850 5900 50  0001 C CNN
 	1    10850 5800
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J12
-U 1 1 5E3477DC
-P 9750 5350
-F 0 "J12" H 9850 5550 50  0000 C CNN
-F 1 "DHT4_JUMP" H 9600 5450 50  0000 C CNN
-F 2 "" H 9750 5350 50  0001 C CNN
-F 3 "~" H 9750 5350 50  0001 C CNN
-	1    9750 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 5350 10200 5350
 Wire Wire Line
 	10200 5350 10200 5650
 Wire Wire Line
 	10200 5650 10250 5650
-Connection ~ 10200 5350
-Wire Wire Line
-	9800 4650 9950 4650
-Connection ~ 9950 4650
-Wire Wire Line
-	9950 4650 10250 4650
-Text Label 9800 4650 2    50   ~ 0
-DHT_2
-$Comp
-L Device:R R9
-U 1 1 5E3477C9
-P 9950 4500
-F 0 "R9" H 9880 4454 50  0000 R CNN
-F 1 "10k" H 9880 4545 50  0000 R CNN
-F 2 "" V 9880 4500 50  0001 C CNN
-F 3 "~" H 9950 4500 50  0001 C CNN
-	1    9950 4500
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 5E3477BF
@@ -281,161 +227,10 @@ F 3 "" H 10850 4800 50  0001 C CNN
 	1    10850 4700
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J11
-U 1 1 5E3477A1
-P 9750 4250
-F 0 "J11" H 9850 4450 50  0000 C CNN
-F 1 "DHT2_JUMP" H 9600 4350 50  0000 C CNN
-F 2 "" H 9750 4250 50  0001 C CNN
-F 3 "~" H 9750 4250 50  0001 C CNN
-	1    9750 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10200 4250 10200 4550
 Wire Wire Line
 	10200 4550 10250 4550
-Wire Wire Line
-	8050 5750 8200 5750
-Connection ~ 8200 5750
-Wire Wire Line
-	8200 5750 8500 5750
-Text Label 8050 5750 2    50   ~ 0
-DHT_3
-Wire Wire Line
-	8500 5950 8450 5950
-$Comp
-L Device:R R8
-U 1 1 5E344896
-P 8200 5600
-F 0 "R8" H 8130 5554 50  0000 R CNN
-F 1 "10k" H 8130 5645 50  0000 R CNN
-F 2 "" V 8130 5600 50  0001 C CNN
-F 3 "~" H 8200 5600 50  0001 C CNN
-	1    8200 5600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 5E34488C
-P 8450 5950
-F 0 "#PWR022" H 8450 5700 50  0001 C CNN
-F 1 "GND" H 8455 5777 50  0000 C CNN
-F 2 "" H 8450 5950 50  0001 C CNN
-F 3 "" H 8450 5950 50  0001 C CNN
-	1    8450 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR021
-U 1 1 5E344882
-P 8450 5350
-F 0 "#PWR021" H 8450 5200 50  0001 C CNN
-F 1 "+3.3V" H 8465 5523 50  0000 C CNN
-F 2 "" H 8450 5350 50  0001 C CNN
-F 3 "" H 8450 5350 50  0001 C CNN
-	1    8450 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L arduino_sensors:DHT22 J10
-U 1 1 5E344878
-P 9100 5800
-F 0 "J10" V 9054 5778 50  0000 L CNN
-F 1 "DHT22" V 9145 5778 50  0000 L CNN
-F 2 "" H 9100 5900 50  0001 C CNN
-F 3 "" H 9100 5900 50  0001 C CNN
-	1    9100 5800
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J8
-U 1 1 5E34486E
-P 8000 5350
-F 0 "J8" H 8100 5550 50  0000 C CNN
-F 1 "DHT3_JUMP" H 7850 5450 50  0000 C CNN
-F 2 "" H 8000 5350 50  0001 C CNN
-F 3 "~" H 8000 5350 50  0001 C CNN
-	1    8000 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 5350 8450 5350
-Wire Wire Line
-	8450 5350 8450 5650
-Wire Wire Line
-	8450 5650 8500 5650
-Connection ~ 8450 5350
-Wire Wire Line
-	8050 4650 8200 4650
-Connection ~ 8200 4650
-Wire Wire Line
-	8200 4650 8500 4650
-Text Label 8050 4650 2    50   ~ 0
-DHT_1
-$Comp
-L Device:R R7
-U 1 1 5E3135BF
-P 8200 4500
-F 0 "R7" H 8130 4454 50  0000 R CNN
-F 1 "10k" H 8130 4545 50  0000 R CNN
-F 2 "" V 8130 4500 50  0001 C CNN
-F 3 "~" H 8200 4500 50  0001 C CNN
-	1    8200 4500
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 5E303718
-P 8450 4850
-F 0 "#PWR020" H 8450 4600 50  0001 C CNN
-F 1 "GND" H 8455 4677 50  0000 C CNN
-F 2 "" H 8450 4850 50  0001 C CNN
-F 3 "" H 8450 4850 50  0001 C CNN
-	1    8450 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR019
-U 1 1 5E303164
-P 8450 4250
-F 0 "#PWR019" H 8450 4100 50  0001 C CNN
-F 1 "+3.3V" H 8465 4423 50  0000 C CNN
-F 2 "" H 8450 4250 50  0001 C CNN
-F 3 "" H 8450 4250 50  0001 C CNN
-	1    8450 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L arduino_sensors:DHT22 J9
-U 1 1 5E2FF184
-P 9100 4700
-F 0 "J9" V 9054 4678 50  0000 L CNN
-F 1 "DHT22" V 9145 4678 50  0000 L CNN
-F 2 "" H 9100 4800 50  0001 C CNN
-F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 9100 4800 50  0001 C CNN
-	1    9100 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5E33D064
-P 8000 4250
-F 0 "J7" H 8100 4450 50  0000 C CNN
-F 1 "DHT1_JUMP" H 7850 4350 50  0000 C CNN
-F 2 "" H 8000 4250 50  0001 C CNN
-F 3 "~" H 8000 4250 50  0001 C CNN
-	1    8000 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 4250 8450 4250
-Wire Wire Line
-	8450 4250 8450 4550
-Wire Wire Line
-	8450 4550 8500 4550
-Connection ~ 8450 4250
 Wire Notes Line
 	7400 6500 11150 6500
 Text Label 6050 2900 2    50   ~ 0
@@ -535,8 +330,6 @@ Text Notes 7500 6400 0    50   ~ 0
 Temperature/Humidity;\nnot necessarily on-board
 Wire Notes Line
 	7400 3800 11150 3800
-Wire Notes Line
-	7400 3800 7400 6500
 Wire Notes Line
 	11150 3800 11150 6500
 $Comp
@@ -1132,11 +925,6 @@ NoConn ~ 4000 4950
 NoConn ~ 4100 4950
 Wire Wire Line
 	10200 4850 10250 4850
-Wire Wire Line
-	9950 4250 10200 4250
-Connection ~ 10200 4250
-Wire Wire Line
-	8450 4850 8500 4850
 Text Label 1450 7000 1    50   ~ 0
 A0_OUT
 $Comp
@@ -1208,4 +996,222 @@ Wire Wire Line
 	4000 7150 4000 7200
 Wire Wire Line
 	4250 6500 4250 6150
+Text Notes 1850 6550 0    50   ~ 0
+WARNING: do not confuse 5V pin\nwith 3V3 or GND (i.e. 1 pin gap)!
+Text Notes 4200 3600 0    50   ~ 0
+100k pull-ups provided\non SDA/SCL of Due.
+Text Notes 1600 3100 0    50   ~ 0
+Pull-ups not provided - must rely\non connection of OBC for pull-ups.
+Connection ~ 10200 4250
+Connection ~ 10200 5350
+Wire Wire Line
+	8450 4850 8500 4850
+Wire Wire Line
+	9950 4250 10200 4250
+Wire Notes Line
+	7400 3800 7400 6500
+Connection ~ 8450 4250
+Wire Wire Line
+	8450 4550 8500 4550
+Wire Wire Line
+	8450 4250 8450 4550
+Wire Wire Line
+	8200 4250 8450 4250
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 5E33D064
+P 8000 4250
+F 0 "J7" H 8100 4450 50  0000 C CNN
+F 1 "DHT1_JUMP" H 7850 4350 50  0000 C CNN
+F 2 "" H 8000 4250 50  0001 C CNN
+F 3 "~" H 8000 4250 50  0001 C CNN
+	1    8000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduino_sensors:DHT22 J9
+U 1 1 5E2FF184
+P 9100 4700
+F 0 "J9" V 9054 4678 50  0000 L CNN
+F 1 "DHT22" V 9145 4678 50  0000 L CNN
+F 2 "" H 9100 4800 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 9100 4800 50  0001 C CNN
+	1    9100 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR019
+U 1 1 5E303164
+P 8450 4250
+F 0 "#PWR019" H 8450 4100 50  0001 C CNN
+F 1 "+3.3V" H 8465 4423 50  0000 C CNN
+F 2 "" H 8450 4250 50  0001 C CNN
+F 3 "" H 8450 4250 50  0001 C CNN
+	1    8450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5E303718
+P 8450 4850
+F 0 "#PWR020" H 8450 4600 50  0001 C CNN
+F 1 "GND" H 8455 4677 50  0000 C CNN
+F 2 "" H 8450 4850 50  0001 C CNN
+F 3 "" H 8450 4850 50  0001 C CNN
+	1    8450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E3135BF
+P 8200 4500
+F 0 "R7" H 8130 4454 50  0000 R CNN
+F 1 "10k" H 8130 4545 50  0000 R CNN
+F 2 "" V 8130 4500 50  0001 C CNN
+F 3 "~" H 8200 4500 50  0001 C CNN
+	1    8200 4500
+	-1   0    0    1   
+$EndComp
+Text Label 8050 4650 2    50   ~ 0
+DHT_1
+Wire Wire Line
+	8200 4650 8500 4650
+Connection ~ 8200 4650
+Wire Wire Line
+	8050 4650 8200 4650
+Connection ~ 8450 5350
+Wire Wire Line
+	8450 5650 8500 5650
+Wire Wire Line
+	8450 5350 8450 5650
+Wire Wire Line
+	8200 5350 8450 5350
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 5E34486E
+P 8000 5350
+F 0 "J8" H 8100 5550 50  0000 C CNN
+F 1 "DHT3_JUMP" H 7850 5450 50  0000 C CNN
+F 2 "" H 8000 5350 50  0001 C CNN
+F 3 "~" H 8000 5350 50  0001 C CNN
+	1    8000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduino_sensors:DHT22 J10
+U 1 1 5E344878
+P 9100 5800
+F 0 "J10" V 9054 5778 50  0000 L CNN
+F 1 "DHT22" V 9145 5778 50  0000 L CNN
+F 2 "" H 9100 5900 50  0001 C CNN
+F 3 "" H 9100 5900 50  0001 C CNN
+	1    9100 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR021
+U 1 1 5E344882
+P 8450 5350
+F 0 "#PWR021" H 8450 5200 50  0001 C CNN
+F 1 "+3.3V" H 8465 5523 50  0000 C CNN
+F 2 "" H 8450 5350 50  0001 C CNN
+F 3 "" H 8450 5350 50  0001 C CNN
+	1    8450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5E34488C
+P 8450 5950
+F 0 "#PWR022" H 8450 5700 50  0001 C CNN
+F 1 "GND" H 8455 5777 50  0000 C CNN
+F 2 "" H 8450 5950 50  0001 C CNN
+F 3 "" H 8450 5950 50  0001 C CNN
+	1    8450 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E344896
+P 8200 5600
+F 0 "R8" H 8130 5554 50  0000 R CNN
+F 1 "10k" H 8130 5645 50  0000 R CNN
+F 2 "" V 8130 5600 50  0001 C CNN
+F 3 "~" H 8200 5600 50  0001 C CNN
+	1    8200 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 5950 8450 5950
+Text Label 8050 5750 2    50   ~ 0
+DHT_3
+Wire Wire Line
+	8200 5750 8500 5750
+Connection ~ 8200 5750
+Wire Wire Line
+	8050 5750 8200 5750
+$Comp
+L Connector:Conn_01x02_Male J11
+U 1 1 5E3477A1
+P 9750 4250
+F 0 "J11" H 9850 4450 50  0000 C CNN
+F 1 "DHT2_JUMP" H 9600 4350 50  0000 C CNN
+F 2 "" H 9750 4250 50  0001 C CNN
+F 3 "~" H 9750 4250 50  0001 C CNN
+	1    9750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E3477C9
+P 9950 4500
+F 0 "R9" H 9880 4454 50  0000 R CNN
+F 1 "10k" H 9880 4545 50  0000 R CNN
+F 2 "" V 9880 4500 50  0001 C CNN
+F 3 "~" H 9950 4500 50  0001 C CNN
+	1    9950 4500
+	-1   0    0    1   
+$EndComp
+Text Label 9800 4650 2    50   ~ 0
+DHT_2
+Wire Wire Line
+	9950 4650 10250 4650
+Connection ~ 9950 4650
+Wire Wire Line
+	9800 4650 9950 4650
+Wire Wire Line
+	9950 5350 10200 5350
+$Comp
+L Connector:Conn_01x02_Male J12
+U 1 1 5E3477DC
+P 9750 5350
+F 0 "J12" H 9850 5550 50  0000 C CNN
+F 1 "DHT4_JUMP" H 9600 5450 50  0000 C CNN
+F 2 "" H 9750 5350 50  0001 C CNN
+F 3 "~" H 9750 5350 50  0001 C CNN
+	1    9750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E347804
+P 9950 5600
+F 0 "R10" H 9880 5554 50  0000 R CNN
+F 1 "10k" H 9880 5645 50  0000 R CNN
+F 2 "" V 9880 5600 50  0001 C CNN
+F 3 "~" H 9950 5600 50  0001 C CNN
+	1    9950 5600
+	-1   0    0    1   
+$EndComp
+Text Label 9800 5750 2    50   ~ 0
+DHT_4
+Wire Wire Line
+	9950 5750 10250 5750
+Connection ~ 9950 5750
+Wire Wire Line
+	9800 5750 9950 5750
+Text Label 5600 5250 0    50   ~ 0
+DHT_4
+Text Label 5600 5150 0    50   ~ 0
+DHT_2
 $EndSCHEMATC

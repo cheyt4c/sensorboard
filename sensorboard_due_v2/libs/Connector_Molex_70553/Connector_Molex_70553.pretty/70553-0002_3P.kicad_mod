@@ -1,4 +1,4 @@
-(module 70553-0002_3P (layer F.Cu) (tedit 5E3D538D)
+(module 70553-0002_3P (layer F.Cu) (tedit 5E3DF462)
   (descr 70553-0002)
   (tags Connector)
   (fp_text reference J** (at -1.35 4.33) (layer F.SilkS)
@@ -22,9 +22,9 @@
   (fp_line (start 7.63 1.175) (end 7.63 -13.21) (layer F.SilkS) (width 0.2))
   (fp_line (start 7.63 -13.21) (end -2.54 -13.21) (layer F.SilkS) (width 0.2))
   (fp_line (start -2.54 -13.21) (end -2.54 0) (layer F.SilkS) (width 0.2))
-  (pad 1 thru_hole rect (at 0 0) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask))
-  (pad 2 thru_hole circle (at 2.54 0) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask))
-  (pad 3 thru_hole circle (at 5.08 0) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask))
+  (pad 1 thru_hole rect (at 0 0) (size 1.65 1.65) (drill 1.17) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 2.54 0) (size 1.65 1.65) (drill 1.17) (layers *.Cu *.Mask))
+  (pad 3 thru_hole circle (at 5.08 0) (size 1.65 1.65) (drill 1.17) (layers *.Cu *.Mask))
   (model ${KIPRJMOD}/libs/Connector_Molex_70553/Connector_Molex_70553.3dshapes/70553-0002.stp
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))

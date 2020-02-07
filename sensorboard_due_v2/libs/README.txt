@@ -1,0 +1,1 @@
+NOTE: 3D model files (under .3dshapes) are linked to PCB footprint files (under .pretty) via relative filepaths from ${KIPRJMOD}. This means the relative directory structure under the root project folder should not be changed or it will break the links to the 3D files.

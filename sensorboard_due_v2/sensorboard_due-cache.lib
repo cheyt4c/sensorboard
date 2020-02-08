@@ -154,17 +154,18 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x07
+# Connector_Generic_Conn_01x08
 #
-DEF Connector_Generic_Conn_01x07 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x08 J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "Connector_Generic_Conn_01x07" 0 -400 50 H V C CNN
+F1 "Connector_Generic_Conn_01x08" 0 -500 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
+S -50 -395 0 -405 1 1 6 N
 S -50 -295 0 -305 1 1 6 N
 S -50 -195 0 -205 1 1 6 N
 S -50 -95 0 -105 1 1 6 N
@@ -172,7 +173,7 @@ S -50 5 0 -5 1 1 6 N
 S -50 105 0 95 1 1 6 N
 S -50 205 0 195 1 1 6 N
 S -50 305 0 295 1 1 6 N
-S -50 350 50 -350 1 1 10 f
+S -50 350 50 -450 1 1 10 f
 X Pin_1 1 -200 300 150 R 50 50 1 1 P
 X Pin_2 2 -200 200 150 R 50 50 1 1 P
 X Pin_3 3 -200 100 150 R 50 50 1 1 P
@@ -180,6 +181,7 @@ X Pin_4 4 -200 0 150 R 50 50 1 1 P
 X Pin_5 5 -200 -100 150 R 50 50 1 1 P
 X Pin_6 6 -200 -200 150 R 50 50 1 1 P
 X Pin_7 7 -200 -300 150 R 50 50 1 1 P
+X Pin_8 8 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -200,19 +202,18 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# arduino_sensors_DHT22
+# arduino_sensors_DHT22_Conn
 #
-DEF arduino_sensors_DHT22 J 0 40 Y Y 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "arduino_sensors_DHT22" 0 0 50 H V C CNN
-F2 "" 0 100 50 H I C CNN
-F3 "" 0 100 50 H I C CNN
+DEF arduino_sensors_DHT22_Conn J 0 40 Y Y 1 F N
+F0 "J" -50 300 50 H V C CNN
+F1 "arduino_sensors_DHT22_Conn" -50 200 50 H V C CNN
+F2 "" -50 300 50 H I C CNN
+F3 "" -50 300 50 H I C CNN
 DRAW
-T 900 50 -350 40 0 0 0 "NC (3)" Normal 0 C C
-S -250 -50 250 -500 0 1 0 f
-X Vcc 1 -150 -600 100 U 40 40 0 0 W
-X DATA 2 -50 -600 100 U 40 40 0 0 B
-X GND 4 150 -600 100 U 40 40 0 0 W
+S 150 150 -100 -250 0 1 0 f
+X DATA 1 -200 50 100 R 40 40 0 0 B
+X Vcc 2 -200 -50 100 R 40 40 0 0 W
+X GND 3 -200 -150 100 R 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
@@ -301,6 +302,26 @@ X FSYNC 6 -600 -200 200 R 50 50 1 1 I
 X AUXCL 7 650 -100 200 L 50 50 1 1 O C
 X INT 8 650 100 200 L 50 50 1 1 O
 X ~CS 9 -600 -100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# arduino_sensors_MPU-9250_Conn
+#
+DEF arduino_sensors_MPU-9250_Conn J 0 20 Y Y 1 F N
+F0 "J" -150 350 50 H V C CNN
+F1 "arduino_sensors_MPU-9250_Conn" -50 -350 50 H V C CNN
+F2 "" 0 -1000 50 H I C CNN
+F3 "" 300 -550 50 H I C CNN
+$FPLIST
+ *QFN*3x3mm*P0.4mm*
+$ENDFPLIST
+DRAW
+S -200 300 200 -300 0 1 10 f
+X GND 1 -400 200 200 R 50 50 1 1 W
+X VDD 2 -400 100 200 R 50 50 1 1 W
+X SDA 3 -400 0 200 R 50 50 1 1 B
+X SCL 4 -400 -100 200 R 50 50 1 1 I
+X AD0/SD0 5 -400 -200 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

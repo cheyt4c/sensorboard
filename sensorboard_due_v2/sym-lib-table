@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name ARDUINO_DUE)(type Legacy)(uri ${KIPRJMOD}/libs/ARDUINO_DUE/ARDUINO_DUE.lib)(options "")(descr ""))
   (lib (name arduino_sensors)(type Legacy)(uri ${KIPRJMOD}/libs/arduino_sensors/arduino_sensors.lib)(options "")(descr ""))
+  (lib (name Connector_Molex_70553)(type Legacy)(uri ${KIPRJMOD}/libs/Connector_Molex_70553/Connector_Molex_70553.lib)(options "")(descr ""))
 )

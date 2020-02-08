@@ -1,0 +1,38 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 70553-0001
+D 2.54mm,housing,Cgrid,shrouded,90??,2w Molex SL Series, Series Number 70553, 2.54mm Pitch 2 Way 1 Row Right Angle PCB Header, Solder Termination, 3A
+F http://docs-emea.rs-online.com/webdocs/13c4/0900766b813c4970.pdf
+$ENDCMP
+#
+$CMP 70553-0002
+D Headers & Wire Housings R/A HDR 3P low profile single
+F http://www.molex.com/pdm_docs/sd/705530002_sd.pdf
+$ENDCMP
+#
+$CMP 70553-0004
+D 2.54mm,housing,Cgrid,shrouded,90,5w Molex SL Series, Series Number 70553, 2.54mm Pitch 5 Way 1 Row Right Angle PCB Header, Solder Termination, 3A
+F https://componentsearchengine.com/Datasheets/1/70553-0004.pdf
+$ENDCMP
+#
+$CMP 70553-0005
+D 2.54mm,housing,Cgrid,shrouded,90,6w Molex SL Series, Series Number 70553, 2.54mm Pitch 6 Way 1 Row Right Angle PCB Header, Solder Termination, 3A
+F https://www.molex.com/webdocs/datasheets/pdf/en-us/0705530005_PCB_HEADERS.pdf
+$ENDCMP
+#
+$CMP 70553-0006
+D Headers & Wire Housings R/A HDR 7P low profile single
+F https://www.mouser.com/datasheet/2/276/705530006_sd-1608159.pdf
+$ENDCMP
+#
+$CMP 70553-0038
+D Header 2.54mm, low pro, sngl row, RA,4w Molex SL Series, Series Number 70553, 2.54mm Pitch 4 Way 1 Row Right Angle PCB Header, Solder Termination, 3A
+F https://componentsearchengine.com/Datasheets/2/70553-0038.pdf
+$ENDCMP
+#
+$CMP 70553-0042
+D Header 2.54mm, low pro, sngl row, RA,8w Molex SL Series, Series Number 70553, 2.54mm Pitch 8 Way 1 Row Shrouded Right Angle PCB Header, Through Hole
+F https://componentsearchengine.com/Datasheets/1/70553-0042.pdf
+$ENDCMP
+#
+#End Doc Library

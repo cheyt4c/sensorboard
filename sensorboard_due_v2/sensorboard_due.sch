@@ -134,82 +134,50 @@ Wire Wire Line
 	4000 3550 4000 3650
 Wire Wire Line
 	4100 3550 4100 3650
-Wire Wire Line
-	8650 6300 8600 6300
 $Comp
 L power:GND #PWR028
 U 1 1 5E3477FA
-P 8600 6300
-F 0 "#PWR028" H 8600 6050 50  0001 C CNN
-F 1 "GND" H 8605 6127 50  0000 C CNN
-F 2 "" H 8600 6300 50  0001 C CNN
-F 3 "" H 8600 6300 50  0001 C CNN
-	1    8600 6300
+P 8800 6150
+F 0 "#PWR028" H 8800 5900 50  0001 C CNN
+F 1 "GND" H 8805 5977 50  0000 C CNN
+F 2 "" H 8800 6150 50  0001 C CNN
+F 3 "" H 8800 6150 50  0001 C CNN
+	1    8800 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5E3477F0
-P 8600 5700
-F 0 "#PWR027" H 8600 5550 50  0001 C CNN
-F 1 "+3.3V" H 8615 5873 50  0000 C CNN
-F 2 "" H 8600 5700 50  0001 C CNN
-F 3 "" H 8600 5700 50  0001 C CNN
-	1    8600 5700
+P 8800 5550
+F 0 "#PWR027" H 8800 5400 50  0001 C CNN
+F 1 "+3.3V" H 8815 5723 50  0000 C CNN
+F 2 "" H 8800 5550 50  0001 C CNN
+F 3 "" H 8800 5550 50  0001 C CNN
+	1    8800 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L arduino_sensors:DHT22 J14
-U 1 1 5E3477E6
-P 9250 6150
-F 0 "J14" V 9204 6128 50  0000 L CNN
-F 1 "DHT22" V 9295 6128 50  0000 L CNN
-F 2 "" H 9250 6250 50  0001 C CNN
-F 3 "" H 9250 6250 50  0001 C CNN
-	1    9250 6150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8600 5700 8600 6000
-Wire Wire Line
-	8600 6000 8650 6000
-$Comp
 L power:GND #PWR026
 U 1 1 5E3477BF
-P 8600 5200
-F 0 "#PWR026" H 8600 4950 50  0001 C CNN
-F 1 "GND" H 8605 5027 50  0000 C CNN
-F 2 "" H 8600 5200 50  0001 C CNN
-F 3 "" H 8600 5200 50  0001 C CNN
-	1    8600 5200
+P 8800 4950
+F 0 "#PWR026" H 8800 4700 50  0001 C CNN
+F 1 "GND" H 8805 4777 50  0000 C CNN
+F 2 "" H 8800 4950 50  0001 C CNN
+F 3 "" H 8800 4950 50  0001 C CNN
+	1    8800 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR025
 U 1 1 5E3477B5
-P 8600 4600
-F 0 "#PWR025" H 8600 4450 50  0001 C CNN
-F 1 "+3.3V" H 8615 4773 50  0000 C CNN
-F 2 "" H 8600 4600 50  0001 C CNN
-F 3 "" H 8600 4600 50  0001 C CNN
-	1    8600 4600
+P 8800 4350
+F 0 "#PWR025" H 8800 4200 50  0001 C CNN
+F 1 "+3.3V" H 8815 4523 50  0000 C CNN
+F 2 "" H 8800 4350 50  0001 C CNN
+F 3 "" H 8800 4350 50  0001 C CNN
+	1    8800 4350
 	1    0    0    -1  
 $EndComp
-$Comp
-L arduino_sensors:DHT22 J13
-U 1 1 5E3477AB
-P 9250 5050
-F 0 "J13" V 9204 5028 50  0000 L CNN
-F 1 "DHT22" V 9295 5028 50  0000 L CNN
-F 2 "" H 9250 5150 50  0001 C CNN
-F 3 "" H 9250 5150 50  0001 C CNN
-	1    9250 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8600 4600 8600 4900
-Wire Wire Line
-	8600 4900 8650 4900
 NoConn ~ 1050 1200
 $Comp
 L power:GND #PWR015
@@ -239,7 +207,7 @@ U 1 1 5E3D2D44
 P 3650 2150
 F 0 "J4" H 3600 2250 50  0000 L CNN
 F 1 "GPS_UBLOX_NEO6M" H 3300 2150 50  0000 L CNN
-F 2 "" H 3650 2150 50  0001 C CNN
+F 2 "Connector_Molex_70553:70553-0038_4P" H 3650 2150 50  0001 C CNN
 F 3 "https://core-electronics.com.au/u-blox-neo-6m-gps-module.html" H 3650 2150 50  0001 C CNN
 	1    3650 2150
 	1    0    0    -1  
@@ -267,7 +235,7 @@ F 3 "" H 3250 2650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3250 2650 3500 2650
-Text Notes 5150 6550 0    50   ~ 0
+Text Notes 6450 4000 0    50   ~ 0
 Temperature/Humidity;\nnot necessarily on-board
 $Comp
 L Connector_Generic:Conn_01x03 J2
@@ -275,7 +243,7 @@ U 1 1 5E3E9F3D
 P 1300 3250
 F 0 "J2" V 1500 3250 50  0000 R CNN
 F 1 "I2C_SLAVE" V 1400 3400 50  0000 R CNN
-F 2 "" H 1300 3250 50  0001 C CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 1300 3250 50  0001 C CNN
 F 3 "~" H 1300 3250 50  0001 C CNN
 	1    1300 3250
 	0    -1   -1   0   
@@ -341,8 +309,6 @@ NoConn ~ 1600 5950
 NoConn ~ 1700 5950
 NoConn ~ 2000 5950
 NoConn ~ 2300 5950
-NoConn ~ 3200 5950
-NoConn ~ 3300 5950
 NoConn ~ 3800 5950
 NoConn ~ 3900 5950
 NoConn ~ 4000 5950
@@ -355,7 +321,7 @@ U 1 1 5E4BE372
 P 1400 6400
 F 0 "J3" H 1318 6075 50  0000 C CNN
 F 1 "WATCHDOG" H 1318 6166 50  0000 C CNN
-F 2 "" H 1400 6400 50  0001 C CNN
+F 2 "Connector_Molex_70553:70553-0001_2P" H 1400 6400 50  0001 C CNN
 F 3 "~" H 1400 6400 50  0001 C CNN
 	1    1400 6400
 	-1   0    0    1   
@@ -367,8 +333,6 @@ Wire Wire Line
 Connection ~ 2100 6000
 Wire Wire Line
 	1800 6400 1600 6400
-Wire Wire Line
-	1800 5950 1800 6400
 Wire Wire Line
 	1900 5950 1900 6000
 Wire Wire Line
@@ -390,10 +354,8 @@ A5_OUT
 NoConn ~ 4100 4750
 NoConn ~ 4000 4950
 NoConn ~ 4100 4950
-Wire Wire Line
-	8600 5200 8650 5200
 $Comp
-L Connector_Generic:Conn_01x07 J1
+L Connector_Generic:Conn_01x08 J1
 U 1 1 5E4EEBF5
 P 800 7150
 F 0 "J1" H 718 7567 50  0000 C CNN
@@ -433,168 +395,122 @@ Text Notes 4200 3600 0    50   ~ 0
 100k pull-ups provided\non SDA/SCL of Due.
 Text Notes 550  2950 0    50   ~ 0
 Pull-ups not provided - must rely\non connection of OBC for pull-ups.
-Connection ~ 8600 4600
-Connection ~ 8600 5700
+Connection ~ 8800 4350
+Connection ~ 8800 5550
 Wire Wire Line
-	6950 5200 7000 5200
+	8550 4350 8800 4350
+Connection ~ 7150 4350
 Wire Wire Line
-	8350 4600 8600 4600
-Connection ~ 6950 4600
-Wire Wire Line
-	6950 4900 7000 4900
-Wire Wire Line
-	6950 4600 6950 4900
-Wire Wire Line
-	6700 4600 6950 4600
-$Comp
-L arduino_sensors:DHT22 J11
-U 1 1 5E2FF184
-P 7600 5050
-F 0 "J11" V 7554 5028 50  0000 L CNN
-F 1 "DHT22" V 7645 5028 50  0000 L CNN
-F 2 "" H 7600 5150 50  0001 C CNN
-F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 7600 5150 50  0001 C CNN
-	1    7600 5050
-	0    1    1    0   
-$EndComp
+	6900 4350 7150 4350
 $Comp
 L power:+3.3V #PWR019
 U 1 1 5E303164
-P 6950 4600
-F 0 "#PWR019" H 6950 4450 50  0001 C CNN
-F 1 "+3.3V" H 6965 4773 50  0000 C CNN
-F 2 "" H 6950 4600 50  0001 C CNN
-F 3 "" H 6950 4600 50  0001 C CNN
-	1    6950 4600
+P 7150 4350
+F 0 "#PWR019" H 7150 4200 50  0001 C CNN
+F 1 "+3.3V" H 7165 4523 50  0000 C CNN
+F 2 "" H 7150 4350 50  0001 C CNN
+F 3 "" H 7150 4350 50  0001 C CNN
+	1    7150 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR020
 U 1 1 5E303718
-P 6950 5200
-F 0 "#PWR020" H 6950 4950 50  0001 C CNN
-F 1 "GND" H 6955 5027 50  0000 C CNN
-F 2 "" H 6950 5200 50  0001 C CNN
-F 3 "" H 6950 5200 50  0001 C CNN
-	1    6950 5200
+P 7150 4950
+F 0 "#PWR020" H 7150 4700 50  0001 C CNN
+F 1 "GND" H 7155 4777 50  0000 C CNN
+F 2 "" H 7150 4950 50  0001 C CNN
+F 3 "" H 7150 4950 50  0001 C CNN
+	1    7150 4950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L Device:R R1
 U 1 1 5E3135BF
-P 6700 4850
-F 0 "R7" H 6630 4804 50  0000 R CNN
-F 1 "10k" H 6630 4895 50  0000 R CNN
-F 2 "" V 6630 4850 50  0001 C CNN
-F 3 "~" H 6700 4850 50  0001 C CNN
-	1    6700 4850
+P 6900 4600
+F 0 "R1" H 6830 4554 50  0000 R CNN
+F 1 "10k" H 6830 4645 50  0000 R CNN
+F 2 "" V 6830 4600 50  0001 C CNN
+F 3 "~" H 6900 4600 50  0001 C CNN
+	1    6900 4600
 	-1   0    0    1   
 $EndComp
-Text Label 6550 5000 2    50   ~ 0
+Text Label 6750 4750 2    50   ~ 0
 DHT_1
 Wire Wire Line
-	6700 5000 7000 5000
-Connection ~ 6700 5000
+	6750 4750 6900 4750
+Connection ~ 7150 5550
 Wire Wire Line
-	6550 5000 6700 5000
-Connection ~ 6950 5700
-Wire Wire Line
-	6950 6000 7000 6000
-Wire Wire Line
-	6950 5700 6950 6000
-Wire Wire Line
-	6700 5700 6950 5700
-$Comp
-L arduino_sensors:DHT22 J12
-U 1 1 5E344878
-P 7600 6150
-F 0 "J12" V 7554 6128 50  0000 L CNN
-F 1 "DHT22" V 7645 6128 50  0000 L CNN
-F 2 "" H 7600 6250 50  0001 C CNN
-F 3 "" H 7600 6250 50  0001 C CNN
-	1    7600 6150
-	0    1    1    0   
-$EndComp
+	6900 5550 7150 5550
 $Comp
 L power:+3.3V #PWR021
 U 1 1 5E344882
-P 6950 5700
-F 0 "#PWR021" H 6950 5550 50  0001 C CNN
-F 1 "+3.3V" H 6965 5873 50  0000 C CNN
-F 2 "" H 6950 5700 50  0001 C CNN
-F 3 "" H 6950 5700 50  0001 C CNN
-	1    6950 5700
+P 7150 5550
+F 0 "#PWR021" H 7150 5400 50  0001 C CNN
+F 1 "+3.3V" H 7165 5723 50  0000 C CNN
+F 2 "" H 7150 5550 50  0001 C CNN
+F 3 "" H 7150 5550 50  0001 C CNN
+	1    7150 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 5E34488C
-P 6950 6300
-F 0 "#PWR022" H 6950 6050 50  0001 C CNN
-F 1 "GND" H 6955 6127 50  0000 C CNN
-F 2 "" H 6950 6300 50  0001 C CNN
-F 3 "" H 6950 6300 50  0001 C CNN
-	1    6950 6300
+P 7150 6150
+F 0 "#PWR022" H 7150 5900 50  0001 C CNN
+F 1 "GND" H 7155 5977 50  0000 C CNN
+F 2 "" H 7150 6150 50  0001 C CNN
+F 3 "" H 7150 6150 50  0001 C CNN
+	1    7150 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L Device:R R2
 U 1 1 5E344896
-P 6700 5950
-F 0 "R8" H 6630 5904 50  0000 R CNN
-F 1 "10k" H 6630 5995 50  0000 R CNN
-F 2 "" V 6630 5950 50  0001 C CNN
-F 3 "~" H 6700 5950 50  0001 C CNN
-	1    6700 5950
+P 6900 5800
+F 0 "R2" H 6830 5754 50  0000 R CNN
+F 1 "10k" H 6830 5845 50  0000 R CNN
+F 2 "" V 6830 5800 50  0001 C CNN
+F 3 "~" H 6900 5800 50  0001 C CNN
+	1    6900 5800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7000 6300 6950 6300
-Text Label 6550 6100 2    50   ~ 0
+Text Label 6750 5950 2    50   ~ 0
 DHT_2
 Wire Wire Line
-	6700 6100 7000 6100
-Connection ~ 6700 6100
-Wire Wire Line
-	6550 6100 6700 6100
+	6750 5950 6900 5950
 $Comp
-L Device:R R9
+L Device:R R3
 U 1 1 5E3477C9
-P 8350 4850
-F 0 "R9" H 8280 4804 50  0000 R CNN
-F 1 "10k" H 8280 4895 50  0000 R CNN
-F 2 "" V 8280 4850 50  0001 C CNN
-F 3 "~" H 8350 4850 50  0001 C CNN
-	1    8350 4850
+P 8550 4600
+F 0 "R3" H 8480 4554 50  0000 R CNN
+F 1 "10k" H 8480 4645 50  0000 R CNN
+F 2 "" V 8480 4600 50  0001 C CNN
+F 3 "~" H 8550 4600 50  0001 C CNN
+	1    8550 4600
 	-1   0    0    1   
 $EndComp
-Text Label 8200 5000 2    50   ~ 0
+Text Label 8400 4750 2    50   ~ 0
 DHT_3
 Wire Wire Line
-	8350 5000 8650 5000
-Connection ~ 8350 5000
+	8400 4750 8550 4750
 Wire Wire Line
-	8200 5000 8350 5000
-Wire Wire Line
-	8350 5700 8600 5700
+	8550 5550 8800 5550
 $Comp
-L Device:R R10
+L Device:R R4
 U 1 1 5E347804
-P 8350 5950
-F 0 "R10" H 8280 5904 50  0000 R CNN
-F 1 "10k" H 8280 5995 50  0000 R CNN
-F 2 "" V 8280 5950 50  0001 C CNN
-F 3 "~" H 8350 5950 50  0001 C CNN
-	1    8350 5950
+P 8550 5800
+F 0 "R4" H 8480 5754 50  0000 R CNN
+F 1 "10k" H 8480 5845 50  0000 R CNN
+F 2 "" V 8480 5800 50  0001 C CNN
+F 3 "~" H 8550 5800 50  0001 C CNN
+	1    8550 5800
 	-1   0    0    1   
 $EndComp
-Text Label 8200 6100 2    50   ~ 0
+Text Label 8400 5950 2    50   ~ 0
 DHT_4
 Wire Wire Line
-	8350 6100 8650 6100
-Connection ~ 8350 6100
-Wire Wire Line
-	8200 6100 8350 6100
+	8400 5950 8550 5950
 Text Label 5700 4350 0    50   ~ 0
 DHT_4
 Text Label 5700 4150 0    50   ~ 0
@@ -602,12 +518,12 @@ DHT_2
 $Comp
 L power:GND #PWR01
 U 1 1 5E3891EB
-P 1000 7450
-F 0 "#PWR01" H 1000 7200 50  0001 C CNN
-F 1 "GND" H 1005 7277 50  0000 C CNN
-F 2 "" H 1000 7450 50  0001 C CNN
-F 3 "" H 1000 7450 50  0001 C CNN
-	1    1000 7450
+P 1000 7550
+F 0 "#PWR01" H 1000 7300 50  0001 C CNN
+F 1 "GND" H 1005 7377 50  0000 C CNN
+F 2 "" H 1000 7550 50  0001 C CNN
+F 3 "" H 1000 7550 50  0001 C CNN
+	1    1000 7550
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3600 5950
@@ -615,13 +531,13 @@ NoConn ~ 3700 5950
 Text Notes 3550 6200 0    50   ~ 0
 Debug pins can be connected\nvia the stackable headers.
 Wire Wire Line
-	6700 4600 6700 4700
+	6900 4350 6900 4450
 Wire Wire Line
-	6700 5700 6700 5800
+	6900 5550 6900 5650
 Wire Wire Line
-	8350 4600 8350 4700
+	8550 4350 8550 4450
 Wire Wire Line
-	8350 5700 8350 5800
+	8550 5550 8550 5650
 Wire Wire Line
 	3800 2900 3800 3650
 Wire Wire Line
@@ -765,21 +681,18 @@ Wire Wire Line
 Wire Wire Line
 	4200 6850 4200 6950
 Wire Wire Line
-	10000 5700 10000 5800
+	10200 5550 10200 5650
 Wire Wire Line
-	10000 4600 10000 4700
+	10200 4350 10200 4450
 Wire Wire Line
 	5650 7300 5800 7300
-Connection ~ 5800 7300
-Wire Wire Line
-	5800 7300 6100 7300
 Text Label 5650 7300 2    50   ~ 0
 DHT_8
 $Comp
-L Device:R R2
+L Device:R R8
 U 1 1 5E3D4962
 P 5800 7150
-F 0 "R2" H 5730 7104 50  0000 R CNN
+F 0 "R8" H 5730 7104 50  0000 R CNN
 F 1 "10k" H 5730 7195 50  0000 R CNN
 F 2 "" V 5730 7150 50  0001 C CNN
 F 3 "~" H 5800 7150 50  0001 C CNN
@@ -790,16 +703,13 @@ Wire Wire Line
 	5800 6900 6050 6900
 Wire Wire Line
 	4050 7250 4200 7250
-Connection ~ 4200 7250
-Wire Wire Line
-	4200 7250 4500 7250
 Text Label 4050 7250 2    50   ~ 0
 DHT_7
 $Comp
-L Device:R R1
+L Device:R R7
 U 1 1 5E3D4957
 P 4200 7100
-F 0 "R1" H 4130 7054 50  0000 R CNN
+F 0 "R7" H 4130 7054 50  0000 R CNN
 F 1 "10k" H 4130 7145 50  0000 R CNN
 F 2 "" V 4130 7100 50  0001 C CNN
 F 3 "~" H 4200 7100 50  0001 C CNN
@@ -807,146 +717,87 @@ F 3 "~" H 4200 7100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9850 6100 10000 6100
-Connection ~ 10000 6100
-Wire Wire Line
-	10000 6100 10300 6100
-Text Label 9850 6100 2    50   ~ 0
+	10050 5950 10200 5950
+Text Label 10050 5950 2    50   ~ 0
 DHT_6
-Wire Wire Line
-	10300 6300 10250 6300
 $Comp
-L Device:R R4
+L Device:R R6
 U 1 1 5E3D494C
-P 10000 5950
-F 0 "R4" H 9930 5904 50  0000 R CNN
-F 1 "10k" H 9930 5995 50  0000 R CNN
-F 2 "" V 9930 5950 50  0001 C CNN
-F 3 "~" H 10000 5950 50  0001 C CNN
-	1    10000 5950
+P 10200 5800
+F 0 "R6" H 10130 5754 50  0000 R CNN
+F 1 "10k" H 10130 5845 50  0000 R CNN
+F 2 "" V 10130 5800 50  0001 C CNN
+F 3 "~" H 10200 5800 50  0001 C CNN
+	1    10200 5800
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR036
 U 1 1 5E3D4946
-P 10250 6300
-F 0 "#PWR036" H 10250 6050 50  0001 C CNN
-F 1 "GND" H 10255 6127 50  0000 C CNN
-F 2 "" H 10250 6300 50  0001 C CNN
-F 3 "" H 10250 6300 50  0001 C CNN
-	1    10250 6300
+P 10450 6150
+F 0 "#PWR036" H 10450 5900 50  0001 C CNN
+F 1 "GND" H 10455 5977 50  0000 C CNN
+F 2 "" H 10450 6150 50  0001 C CNN
+F 3 "" H 10450 6150 50  0001 C CNN
+	1    10450 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR035
 U 1 1 5E3D4940
-P 10250 5700
-F 0 "#PWR035" H 10250 5550 50  0001 C CNN
-F 1 "+3.3V" H 10265 5873 50  0000 C CNN
-F 2 "" H 10250 5700 50  0001 C CNN
-F 3 "" H 10250 5700 50  0001 C CNN
-	1    10250 5700
+P 10450 5550
+F 0 "#PWR035" H 10450 5400 50  0001 C CNN
+F 1 "+3.3V" H 10465 5723 50  0000 C CNN
+F 2 "" H 10450 5550 50  0001 C CNN
+F 3 "" H 10450 5550 50  0001 C CNN
+	1    10450 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L arduino_sensors:DHT22 J16
-U 1 1 5E3D493A
-P 10900 6150
-F 0 "J16" V 10854 6128 50  0000 L CNN
-F 1 "DHT22" V 10945 6128 50  0000 L CNN
-F 2 "" H 10900 6250 50  0001 C CNN
-F 3 "" H 10900 6250 50  0001 C CNN
-	1    10900 6150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	10000 5700 10250 5700
-Wire Wire Line
-	10250 5700 10250 6000
-Wire Wire Line
-	10250 6000 10300 6000
-Connection ~ 10250 5700
-Wire Wire Line
-	9850 5000 10000 5000
-Connection ~ 10000 5000
-Wire Wire Line
-	10000 5000 10300 5000
-Text Label 9850 5000 2    50   ~ 0
+	10200 5550 10450 5550
+Connection ~ 10450 5550
+Text Label 10050 4750 2    50   ~ 0
 DHT_5
 $Comp
-L Device:R R3
+L Device:R R5
 U 1 1 5E3D492C
-P 10000 4850
-F 0 "R3" H 9930 4804 50  0000 R CNN
-F 1 "10k" H 9930 4895 50  0000 R CNN
-F 2 "" V 9930 4850 50  0001 C CNN
-F 3 "~" H 10000 4850 50  0001 C CNN
-	1    10000 4850
+P 10200 4600
+F 0 "R5" H 10130 4554 50  0000 R CNN
+F 1 "10k" H 10130 4645 50  0000 R CNN
+F 2 "" V 10130 4600 50  0001 C CNN
+F 3 "~" H 10200 4600 50  0001 C CNN
+	1    10200 4600
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR034
 U 1 1 5E3D4926
-P 10250 5200
-F 0 "#PWR034" H 10250 4950 50  0001 C CNN
-F 1 "GND" H 10255 5027 50  0000 C CNN
-F 2 "" H 10250 5200 50  0001 C CNN
-F 3 "" H 10250 5200 50  0001 C CNN
-	1    10250 5200
+P 10450 4950
+F 0 "#PWR034" H 10450 4700 50  0001 C CNN
+F 1 "GND" H 10455 4777 50  0000 C CNN
+F 2 "" H 10450 4950 50  0001 C CNN
+F 3 "" H 10450 4950 50  0001 C CNN
+	1    10450 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR033
 U 1 1 5E3D4920
-P 10250 4600
-F 0 "#PWR033" H 10250 4450 50  0001 C CNN
-F 1 "+3.3V" H 10265 4773 50  0000 C CNN
-F 2 "" H 10250 4600 50  0001 C CNN
-F 3 "" H 10250 4600 50  0001 C CNN
-	1    10250 4600
+P 10450 4350
+F 0 "#PWR033" H 10450 4200 50  0001 C CNN
+F 1 "+3.3V" H 10465 4523 50  0000 C CNN
+F 2 "" H 10450 4350 50  0001 C CNN
+F 3 "" H 10450 4350 50  0001 C CNN
+	1    10450 4350
 	1    0    0    -1  
 $EndComp
-$Comp
-L arduino_sensors:DHT22 J15
-U 1 1 5E3D491A
-P 10900 5050
-F 0 "J15" V 10854 5028 50  0000 L CNN
-F 1 "DHT22" V 10945 5028 50  0000 L CNN
-F 2 "" H 10900 5150 50  0001 C CNN
-F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 10900 5150 50  0001 C CNN
-	1    10900 5050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	10000 4600 10250 4600
-Wire Wire Line
-	10250 4600 10250 4900
-Wire Wire Line
-	10250 4900 10300 4900
-Connection ~ 10250 4600
+	10200 4350 10450 4350
+Connection ~ 10450 4350
 Wire Wire Line
 	4200 6850 4450 6850
-Wire Wire Line
-	10250 5200 10300 5200
 Connection ~ 6050 6900
 Connection ~ 4450 6850
-Wire Wire Line
-	4450 7450 4500 7450
-Wire Wire Line
-	4450 7150 4500 7150
-Wire Wire Line
-	4450 6850 4450 7150
-$Comp
-L arduino_sensors:DHT22 J17
-U 1 1 5E3D4909
-P 5100 7300
-F 0 "J17" V 5054 7278 50  0000 L CNN
-F 1 "DHT22" V 5145 7278 50  0000 L CNN
-F 2 "" H 5100 7400 50  0001 C CNN
-F 3 "" H 5100 7400 50  0001 C CNN
-	1    5100 7300
-	0    1    1    0   
-$EndComp
 $Comp
 L power:+3.3V #PWR03
 U 1 1 5E3D4903
@@ -969,21 +820,6 @@ F 3 "" H 4450 7450 50  0001 C CNN
 	1    4450 7450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6050 7200 6100 7200
-Wire Wire Line
-	6050 6900 6050 7200
-$Comp
-L arduino_sensors:DHT22 J18
-U 1 1 5E3D48F5
-P 6700 7350
-F 0 "J18" V 6654 7328 50  0000 L CNN
-F 1 "DHT22" V 6745 7328 50  0000 L CNN
-F 2 "" H 6700 7450 50  0001 C CNN
-F 3 "" H 6700 7450 50  0001 C CNN
-	1    6700 7350
-	0    1    1    0   
-$EndComp
 $Comp
 L power:+3.3V #PWR06
 U 1 1 5E3D48EF
@@ -995,19 +831,6 @@ F 3 "" H 6050 6900 50  0001 C CNN
 	1    6050 6900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5E3D48E9
-P 6050 7500
-F 0 "#PWR08" H 6050 7250 50  0001 C CNN
-F 1 "GND" H 6055 7327 50  0000 C CNN
-F 2 "" H 6050 7500 50  0001 C CNN
-F 3 "" H 6050 7500 50  0001 C CNN
-	1    6050 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 7500 6050 7500
 $Comp
 L ARDUINO_DUE:ARDUINO_DUE_Shield_wSPI PCB1
 U 1 1 5E2A5E8E
@@ -1046,7 +869,7 @@ Wire Wire Line
 Text Notes 650  650  0    50   ~ 0
 On-board SPI slave devices
 Wire Notes Line
-	6400 4350 11150 4350
+	6300 3800 11050 3800
 $Comp
 L power:GND #PWR023
 U 1 1 5E3F826E
@@ -1062,235 +885,34 @@ Text Notes 8450 700  0    50   ~ 0
 MPU-9250 expansion ports \n(Barom expan. on 2nd shield)
 Text Label 5400 1150 2    50   ~ 0
 MPU_1
-Wire Notes Line
-	8350 550  8350 1900
-Wire Notes Line
-	2800 1900 8350 1900
-NoConn ~ 10200 750 
-NoConn ~ 10800 1350
-NoConn ~ 10800 1250
-NoConn ~ 10800 1150
-NoConn ~ 9550 1450
-NoConn ~ 9550 1350
 $Comp
 L power:+3.3V #PWR037
 U 1 1 5E56A3A1
-P 10300 750
-F 0 "#PWR037" H 10300 600 50  0001 C CNN
-F 1 "+3.3V" H 10315 923 50  0000 C CNN
-F 2 "" H 10300 750 50  0001 C CNN
-F 3 "" H 10300 750 50  0001 C CNN
-	1    10300 750 
+P 8600 1050
+F 0 "#PWR037" H 8600 900 50  0001 C CNN
+F 1 "+3.3V" H 8615 1223 50  0000 C CNN
+F 2 "" H 8600 1050 50  0001 C CNN
+F 3 "" H 8600 1050 50  0001 C CNN
+	1    8600 1050
 	1    0    0    -1  
 $EndComp
-Text Label 9550 1050 2    50   ~ 0
+Text Label 8950 1250 2    50   ~ 0
 SDA_MASTER
-Text Label 9550 1250 2    50   ~ 0
+Text Label 8950 1350 2    50   ~ 0
 SCL_MASTER
-$Comp
-L arduino_sensors:MPU-9250_Breakout J22
-U 1 1 5E56A3A9
-P 10150 1250
-F 0 "J22" H 9850 1600 50  0000 C CNN
-F 1 "MPU-9250_Breakout" H 10200 900 50  0000 C CNN
-F 2 "" H 10150 250 50  0001 C CNN
-F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 10150 1100 50  0001 C CNN
-	1    10150 1250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR039
 U 1 1 5E56A3B0
-P 10800 1450
-F 0 "#PWR039" H 10800 1200 50  0001 C CNN
-F 1 "GND" H 10805 1277 50  0000 C CNN
-F 2 "" H 10800 1450 50  0001 C CNN
-F 3 "" H 10800 1450 50  0001 C CNN
-	1    10800 1450
+P 8800 900
+F 0 "#PWR039" H 8800 650 50  0001 C CNN
+F 1 "GND" H 8805 727 50  0000 C CNN
+F 2 "" H 8800 900 50  0001 C CNN
+F 3 "" H 8800 900 50  0001 C CNN
+	1    8800 900 
 	1    0    0    -1  
 $EndComp
-Text Label 9550 1150 2    50   ~ 0
+Text Label 8950 1450 2    50   ~ 0
 MPU_2
-NoConn ~ 6650 2150
-NoConn ~ 7250 2750
-NoConn ~ 7250 2650
-NoConn ~ 7250 2550
-NoConn ~ 6000 2850
-NoConn ~ 6000 2750
-$Comp
-L power:+3.3V #PWR010
-U 1 1 5E57A7C6
-P 6750 2150
-F 0 "#PWR010" H 6750 2000 50  0001 C CNN
-F 1 "+3.3V" H 6765 2323 50  0000 C CNN
-F 2 "" H 6750 2150 50  0001 C CNN
-F 3 "" H 6750 2150 50  0001 C CNN
-	1    6750 2150
-	1    0    0    -1  
-$EndComp
-Text Label 6000 2450 2    50   ~ 0
-SDA_MASTER
-Text Label 6000 2650 2    50   ~ 0
-SCL_MASTER
-$Comp
-L arduino_sensors:MPU-9250_Breakout J23
-U 1 1 5E57A7CE
-P 6600 2650
-F 0 "J23" H 6300 3000 50  0000 C CNN
-F 1 "MPU-9250_Breakout" H 6650 2300 50  0000 C CNN
-F 2 "" H 6600 1650 50  0001 C CNN
-F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 6600 2500 50  0001 C CNN
-	1    6600 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5E57A7D4
-P 7250 2850
-F 0 "#PWR011" H 7250 2600 50  0001 C CNN
-F 1 "GND" H 7255 2677 50  0000 C CNN
-F 2 "" H 7250 2850 50  0001 C CNN
-F 3 "" H 7250 2850 50  0001 C CNN
-	1    7250 2850
-	1    0    0    -1  
-$EndComp
-Text Label 6000 2550 2    50   ~ 0
-MPU_3
-NoConn ~ 8550 2150
-NoConn ~ 9150 2750
-NoConn ~ 9150 2650
-NoConn ~ 9150 2550
-NoConn ~ 7900 2850
-NoConn ~ 7900 2750
-$Comp
-L power:+3.3V #PWR031
-U 1 1 5E57F588
-P 8650 2150
-F 0 "#PWR031" H 8650 2000 50  0001 C CNN
-F 1 "+3.3V" H 8665 2323 50  0000 C CNN
-F 2 "" H 8650 2150 50  0001 C CNN
-F 3 "" H 8650 2150 50  0001 C CNN
-	1    8650 2150
-	1    0    0    -1  
-$EndComp
-Text Label 7900 2450 2    50   ~ 0
-SDA_MASTER
-Text Label 7900 2650 2    50   ~ 0
-SCL_MASTER
-$Comp
-L arduino_sensors:MPU-9250_Breakout J24
-U 1 1 5E57F590
-P 8500 2650
-F 0 "J24" H 8200 3000 50  0000 C CNN
-F 1 "MPU-9250_Breakout" H 8550 2300 50  0000 C CNN
-F 2 "" H 8500 1650 50  0001 C CNN
-F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 8500 2500 50  0001 C CNN
-	1    8500 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR032
-U 1 1 5E57F596
-P 9150 2850
-F 0 "#PWR032" H 9150 2600 50  0001 C CNN
-F 1 "GND" H 9155 2677 50  0000 C CNN
-F 2 "" H 9150 2850 50  0001 C CNN
-F 3 "" H 9150 2850 50  0001 C CNN
-	1    9150 2850
-	1    0    0    -1  
-$EndComp
-Text Label 7900 2550 2    50   ~ 0
-MPU_4
-NoConn ~ 10450 2150
-NoConn ~ 11050 2750
-NoConn ~ 11050 2650
-NoConn ~ 11050 2550
-NoConn ~ 9800 2850
-NoConn ~ 9800 2750
-$Comp
-L power:+3.3V #PWR038
-U 1 1 5E584A2C
-P 10550 2150
-F 0 "#PWR038" H 10550 2000 50  0001 C CNN
-F 1 "+3.3V" H 10565 2323 50  0000 C CNN
-F 2 "" H 10550 2150 50  0001 C CNN
-F 3 "" H 10550 2150 50  0001 C CNN
-	1    10550 2150
-	1    0    0    -1  
-$EndComp
-Text Label 9800 2450 2    50   ~ 0
-SDA_MASTER
-Text Label 9800 2650 2    50   ~ 0
-SCL_MASTER
-$Comp
-L arduino_sensors:MPU-9250_Breakout J25
-U 1 1 5E584A34
-P 10400 2650
-F 0 "J25" H 10100 3000 50  0000 C CNN
-F 1 "MPU-9250_Breakout" H 10450 2300 50  0000 C CNN
-F 2 "" H 10400 1650 50  0001 C CNN
-F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 10400 2500 50  0001 C CNN
-	1    10400 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR040
-U 1 1 5E584A3A
-P 11050 2850
-F 0 "#PWR040" H 11050 2600 50  0001 C CNN
-F 1 "GND" H 11055 2677 50  0000 C CNN
-F 2 "" H 11050 2850 50  0001 C CNN
-F 3 "" H 11050 2850 50  0001 C CNN
-	1    11050 2850
-	1    0    0    -1  
-$EndComp
-Text Label 9800 2550 2    50   ~ 0
-MPU_5
-NoConn ~ 7300 3350
-NoConn ~ 7900 3950
-NoConn ~ 7900 3850
-NoConn ~ 7900 3750
-NoConn ~ 6650 4050
-NoConn ~ 6650 3950
-$Comp
-L power:+3.3V #PWR012
-U 1 1 5E5B7910
-P 7400 3350
-F 0 "#PWR012" H 7400 3200 50  0001 C CNN
-F 1 "+3.3V" H 7415 3523 50  0000 C CNN
-F 2 "" H 7400 3350 50  0001 C CNN
-F 3 "" H 7400 3350 50  0001 C CNN
-	1    7400 3350
-	1    0    0    -1  
-$EndComp
-Text Label 6650 3650 2    50   ~ 0
-SDA_MASTER
-Text Label 6650 3850 2    50   ~ 0
-SCL_MASTER
-$Comp
-L arduino_sensors:MPU-9250_Breakout J26
-U 1 1 5E5B7918
-P 7250 3850
-F 0 "J26" H 6950 4200 50  0000 C CNN
-F 1 "MPU-9250_Breakout" H 7300 3500 50  0000 C CNN
-F 2 "" H 7250 2850 50  0001 C CNN
-F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 7250 3700 50  0001 C CNN
-	1    7250 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5E5B791E
-P 7900 4050
-F 0 "#PWR018" H 7900 3800 50  0001 C CNN
-F 1 "GND" H 7905 3877 50  0000 C CNN
-F 2 "" H 7900 4050 50  0001 C CNN
-F 3 "" H 7900 4050 50  0001 C CNN
-	1    7900 4050
-	1    0    0    -1  
-$EndComp
-Text Label 6650 3750 2    50   ~ 0
-MPU_6
 Text Notes 3200 3450 0    50   ~ 0
 UART expan. \non 2nd board
 Text Label 4500 4050 2    50   ~ 0
@@ -1317,6 +939,399 @@ Wire Wire Line
 	4500 4450 4900 4450
 Wire Wire Line
 	4500 4550 4900 4550
-Text Notes 8000 3350 0    50   ~ 0
-Use dynamic addr selection to prevent\nI2C conflicts with RTC, other MPUs.
+Text Notes 9850 2950 0    50   ~ 0
+Use dynamic addr selection \nto prevent I2C conflicts \nwith RTC, other MPUs.
+$Comp
+L arduino_sensors:MPU-9250_Conn J22
+U 1 1 5E40213E
+P 9350 1250
+F 0 "J22" H 9150 1600 50  0000 L CNN
+F 1 "MPU-9250_Conn" H 9050 900 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0004_5P" H 9350 250 50  0001 C CNN
+F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 9650 700 50  0001 C CNN
+	1    9350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 900  8950 900 
+Wire Wire Line
+	8950 900  8950 1050
+Wire Wire Line
+	8600 1050 8600 1150
+Wire Wire Line
+	8600 1150 8950 1150
+Wire Notes Line
+	2800 1900 8350 1900
+Wire Notes Line
+	8350 550  8350 1900
+$Comp
+L power:+3.3V #PWR031
+U 1 1 5E430936
+P 9900 1050
+F 0 "#PWR031" H 9900 900 50  0001 C CNN
+F 1 "+3.3V" H 9915 1223 50  0000 C CNN
+F 2 "" H 9900 1050 50  0001 C CNN
+F 3 "" H 9900 1050 50  0001 C CNN
+	1    9900 1050
+	1    0    0    -1  
+$EndComp
+Text Label 10250 1250 2    50   ~ 0
+SDA_MASTER
+Text Label 10250 1350 2    50   ~ 0
+SCL_MASTER
+$Comp
+L power:GND #PWR038
+U 1 1 5E43093E
+P 10100 900
+F 0 "#PWR038" H 10100 650 50  0001 C CNN
+F 1 "GND" H 10105 727 50  0000 C CNN
+F 2 "" H 10100 900 50  0001 C CNN
+F 3 "" H 10100 900 50  0001 C CNN
+	1    10100 900 
+	1    0    0    -1  
+$EndComp
+Text Label 10250 1450 2    50   ~ 0
+MPU_5
+$Comp
+L arduino_sensors:MPU-9250_Conn J25
+U 1 1 5E430945
+P 10650 1250
+F 0 "J25" H 10450 1600 50  0000 L CNN
+F 1 "MPU-9250_Conn" H 10350 900 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0004_5P" H 10650 250 50  0001 C CNN
+F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 10950 700 50  0001 C CNN
+	1    10650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 900  10250 900 
+Wire Wire Line
+	10250 900  10250 1050
+Wire Wire Line
+	9900 1050 9900 1150
+Wire Wire Line
+	9900 1150 10250 1150
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5E4364EE
+P 8600 1950
+F 0 "#PWR010" H 8600 1800 50  0001 C CNN
+F 1 "+3.3V" H 8615 2123 50  0000 C CNN
+F 2 "" H 8600 1950 50  0001 C CNN
+F 3 "" H 8600 1950 50  0001 C CNN
+	1    8600 1950
+	1    0    0    -1  
+$EndComp
+Text Label 8950 2150 2    50   ~ 0
+SDA_MASTER
+Text Label 8950 2250 2    50   ~ 0
+SCL_MASTER
+$Comp
+L power:GND #PWR012
+U 1 1 5E4364F6
+P 8800 1800
+F 0 "#PWR012" H 8800 1550 50  0001 C CNN
+F 1 "GND" H 8805 1627 50  0000 C CNN
+F 2 "" H 8800 1800 50  0001 C CNN
+F 3 "" H 8800 1800 50  0001 C CNN
+	1    8800 1800
+	1    0    0    -1  
+$EndComp
+Text Label 8950 2350 2    50   ~ 0
+MPU_3
+$Comp
+L arduino_sensors:MPU-9250_Conn J23
+U 1 1 5E4364FD
+P 9350 2150
+F 0 "J23" H 9150 2500 50  0000 L CNN
+F 1 "MPU-9250_Conn" H 9050 1800 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0004_5P" H 9350 1150 50  0001 C CNN
+F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 9650 1600 50  0001 C CNN
+	1    9350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1800 8950 1800
+Wire Wire Line
+	8950 1800 8950 1950
+Wire Wire Line
+	8600 1950 8600 2050
+Wire Wire Line
+	8600 2050 8950 2050
+$Comp
+L power:+3.3V #PWR032
+U 1 1 5E43CA4A
+P 9900 1950
+F 0 "#PWR032" H 9900 1800 50  0001 C CNN
+F 1 "+3.3V" H 9915 2123 50  0000 C CNN
+F 2 "" H 9900 1950 50  0001 C CNN
+F 3 "" H 9900 1950 50  0001 C CNN
+	1    9900 1950
+	1    0    0    -1  
+$EndComp
+Text Label 10250 2150 2    50   ~ 0
+SDA_MASTER
+Text Label 10250 2250 2    50   ~ 0
+SCL_MASTER
+$Comp
+L power:GND #PWR040
+U 1 1 5E43CA52
+P 10100 1800
+F 0 "#PWR040" H 10100 1550 50  0001 C CNN
+F 1 "GND" H 10105 1627 50  0000 C CNN
+F 2 "" H 10100 1800 50  0001 C CNN
+F 3 "" H 10100 1800 50  0001 C CNN
+	1    10100 1800
+	1    0    0    -1  
+$EndComp
+Text Label 10250 2350 2    50   ~ 0
+MPU_6
+$Comp
+L arduino_sensors:MPU-9250_Conn J26
+U 1 1 5E43CA59
+P 10650 2150
+F 0 "J26" H 10450 2500 50  0000 L CNN
+F 1 "MPU-9250_Conn" H 10350 1800 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0004_5P" H 10650 1150 50  0001 C CNN
+F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 10950 1600 50  0001 C CNN
+	1    10650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1800 10250 1800
+Wire Wire Line
+	10250 1800 10250 1950
+Wire Wire Line
+	9900 1950 9900 2050
+Wire Wire Line
+	9900 2050 10250 2050
+$Comp
+L power:+3.3V #PWR011
+U 1 1 5E456FE6
+P 8600 2850
+F 0 "#PWR011" H 8600 2700 50  0001 C CNN
+F 1 "+3.3V" H 8615 3023 50  0000 C CNN
+F 2 "" H 8600 2850 50  0001 C CNN
+F 3 "" H 8600 2850 50  0001 C CNN
+	1    8600 2850
+	1    0    0    -1  
+$EndComp
+Text Label 8950 3050 2    50   ~ 0
+SDA_MASTER
+Text Label 8950 3150 2    50   ~ 0
+SCL_MASTER
+$Comp
+L power:GND #PWR018
+U 1 1 5E456FEE
+P 8800 2700
+F 0 "#PWR018" H 8800 2450 50  0001 C CNN
+F 1 "GND" H 8805 2527 50  0000 C CNN
+F 2 "" H 8800 2700 50  0001 C CNN
+F 3 "" H 8800 2700 50  0001 C CNN
+	1    8800 2700
+	1    0    0    -1  
+$EndComp
+Text Label 8950 3250 2    50   ~ 0
+MPU_4
+$Comp
+L arduino_sensors:MPU-9250_Conn J24
+U 1 1 5E456FF5
+P 9350 3050
+F 0 "J24" H 9150 3400 50  0000 L CNN
+F 1 "MPU-9250_Conn" H 9050 2700 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0004_5P" H 9350 2050 50  0001 C CNN
+F 3 "https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html" H 9650 2500 50  0001 C CNN
+	1    9350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2700 8950 2700
+Wire Wire Line
+	8950 2700 8950 2850
+Wire Wire Line
+	8600 2850 8600 2950
+Wire Wire Line
+	8600 2950 8950 2950
+Wire Wire Line
+	7150 4350 7150 4850
+Connection ~ 6900 4750
+Wire Wire Line
+	7150 4850 7300 4850
+Wire Wire Line
+	7150 4950 7300 4950
+Wire Wire Line
+	6900 4750 7300 4750
+$Comp
+L arduino_sensors:DHT22_Conn J11
+U 1 1 5E4773FB
+P 7500 4800
+F 0 "J11" H 7400 5000 50  0000 L CNN
+F 1 "DHT22_Conn" H 7300 4500 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 7450 5100 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 7450 5100 50  0001 C CNN
+	1    7500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4850 8950 4850
+Wire Wire Line
+	8800 4950 8950 4950
+Wire Wire Line
+	8550 4750 8950 4750
+$Comp
+L arduino_sensors:DHT22_Conn J13
+U 1 1 5E4A6076
+P 9150 4800
+F 0 "J13" H 9050 5000 50  0000 L CNN
+F 1 "DHT22_Conn" H 8950 4500 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 9100 5100 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 9100 5100 50  0001 C CNN
+	1    9150 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4350 8800 4850
+Wire Wire Line
+	10050 4750 10200 4750
+Wire Wire Line
+	10450 4850 10600 4850
+Wire Wire Line
+	10450 4950 10600 4950
+Wire Wire Line
+	10200 4750 10600 4750
+$Comp
+L arduino_sensors:DHT22_Conn J15
+U 1 1 5E4B8232
+P 10800 4800
+F 0 "J15" H 10700 5000 50  0000 L CNN
+F 1 "DHT22_Conn" H 10600 4500 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 10750 5100 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 10750 5100 50  0001 C CNN
+	1    10800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 4350 10450 4850
+Connection ~ 8550 4750
+Connection ~ 10200 4750
+Wire Wire Line
+	7150 6050 7300 6050
+Wire Wire Line
+	7150 6150 7300 6150
+Wire Wire Line
+	6900 5950 7300 5950
+$Comp
+L arduino_sensors:DHT22_Conn J12
+U 1 1 5E4D5B5C
+P 7500 6000
+F 0 "J12" H 7400 6200 50  0000 L CNN
+F 1 "DHT22_Conn" H 7300 5700 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 7450 6300 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 7450 6300 50  0001 C CNN
+	1    7500 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5550 7150 6050
+Wire Wire Line
+	8800 6050 8950 6050
+Wire Wire Line
+	8800 6150 8950 6150
+Wire Wire Line
+	8550 5950 8950 5950
+$Comp
+L arduino_sensors:DHT22_Conn J14
+U 1 1 5E4DFD23
+P 9150 6000
+F 0 "J14" H 9050 6200 50  0000 L CNN
+F 1 "DHT22_Conn" H 8950 5700 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 9100 6300 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 9100 6300 50  0001 C CNN
+	1    9150 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5550 8800 6050
+Wire Wire Line
+	10450 6050 10600 6050
+Wire Wire Line
+	10450 6150 10600 6150
+Wire Wire Line
+	10200 5950 10600 5950
+$Comp
+L arduino_sensors:DHT22_Conn J16
+U 1 1 5E4EA62E
+P 10800 6000
+F 0 "J16" H 10700 6200 50  0000 L CNN
+F 1 "DHT22_Conn" H 10600 5700 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 10750 6300 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 10750 6300 50  0001 C CNN
+	1    10800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5550 10450 6050
+Wire Wire Line
+	4450 7350 4600 7350
+Wire Wire Line
+	4450 7450 4600 7450
+Wire Wire Line
+	4200 7250 4600 7250
+$Comp
+L arduino_sensors:DHT22_Conn J17
+U 1 1 5E5014ED
+P 4800 7300
+F 0 "J17" H 4700 7500 50  0000 L CNN
+F 1 "DHT22_Conn" H 4600 7000 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 4750 7600 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 4750 7600 50  0001 C CNN
+	1    4800 7300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 5950
+Connection ~ 8550 5950
+Connection ~ 10200 5950
+Connection ~ 4200 7250
+Wire Wire Line
+	4450 6850 4450 7350
+$Comp
+L power:GND #PWR08
+U 1 1 5E3D48E9
+P 6050 7500
+F 0 "#PWR08" H 6050 7250 50  0001 C CNN
+F 1 "GND" H 6055 7327 50  0000 C CNN
+F 2 "" H 6050 7500 50  0001 C CNN
+F 3 "" H 6050 7500 50  0001 C CNN
+	1    6050 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 7400 6200 7400
+Wire Wire Line
+	6050 7500 6200 7500
+Wire Wire Line
+	5800 7300 6200 7300
+$Comp
+L arduino_sensors:DHT22_Conn J18
+U 1 1 5E517334
+P 6400 7350
+F 0 "J18" H 6300 7550 50  0000 L CNN
+F 1 "DHT22_Conn" H 6200 7050 50  0000 L CNN
+F 2 "Connector_Molex_70553:70553-0002_3P" H 6350 7650 50  0001 C CNN
+F 3 "https://core-electronics.com.au/dht22-temperature-and-relative-humidity-sensor-module.html" H 6350 7650 50  0001 C CNN
+	1    6400 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 6900 6050 7400
+Connection ~ 5800 7300
+Text Label 3200 5950 3    50   ~ 0
+A6_OUT
+Wire Wire Line
+	1800 5950 1800 6400
+NoConn ~ 3300 5950
+Text Label 1050 7450 0    50   ~ 0
+A6_OUT
+Wire Wire Line
+	1000 7450 1050 7450
 $EndSCHEMATC

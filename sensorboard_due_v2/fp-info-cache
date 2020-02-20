@@ -1,4 +1,4 @@
-16958448925129015
+16960030139941852
 ARDUINO_DUE
 ARDUINO_DUE
 Footprint for representing an Arduino Due board in an EAGLE schematic. Created by Dave Young for Element14. More EAGLE documentation at: http://www.element14.com/community/community/knode/cadsoft_eagle
@@ -75340,6 +75340,13 @@ MPU-9250_Breakout
 0
 11
 11
+arduino_sensors
+R_0805_10K_RESC2012X65N
+ESR10EZPJ103-1
+Resistor
+0
+2
+2
 arduino_sensors
 SD_Card_Breakout
 

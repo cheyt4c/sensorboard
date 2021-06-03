@@ -211,61 +211,7 @@ Wire Wire Line
 	3900 2800 3900 3650
 Wire Wire Line
 	1500 3550 1500 3650
-Text Notes 6850 850  0    50   ~ 0
-Barom:\nI2C 0x28
-Text Label 7300 1050 2    50   ~ 0
-SDA_MASTER
-Text Label 7300 1150 2    50   ~ 0
-SCL_MASTER
-Wire Wire Line
-	8000 950  8150 950 
-$Comp
-L power:GND #PWR029
-U 1 1 5E40DAAE
-P 7850 1450
-F 0 "#PWR029" H 7850 1200 50  0001 C CNN
-F 1 "GND" H 7855 1277 50  0000 C CNN
-F 2 "" H 7850 1450 50  0001 C CNN
-F 3 "" H 7850 1450 50  0001 C CNN
-	1    7850 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR030
-U 1 1 5E40D18E
-P 8150 950
-F 0 "#PWR030" H 8150 800 50  0001 C CNN
-F 1 "+3.3V" H 8165 1123 50  0000 C CNN
-F 2 "" H 8150 950 50  0001 C CNN
-F 3 "" H 8150 950 50  0001 C CNN
-	1    8150 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L arduino_sensors:HSCDANN001BA2A3 U1
-U 1 1 5E40C3AA
-P 7650 1150
-F 0 "U1" H 7650 1617 50  0000 C CNN
-F 1 "HSCDANN001BA2A3" H 7650 1526 50  0000 C CNN
-F 2 "arduino_sensors:HSCDANN001BA2A3_DIP8" H 7650 450 50  0001 C CNN
-F 3 "https://sensing.honeywell.com/honeywell-sensing-trustability-hsc-series-high-accurboard-mount-pressure-sensors-50099148-a-en.pdf" H 7700 1150 50  0001 C CNN
-	1    7650 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L arduino_sensors:DS3231_RTC_BREAKOUT H2
-U 1 1 5E3A5700
-P 6000 2100
-F 0 "H2" H 6000 1725 50  0000 C CNN
-F 1 "DS3231_RTC_BREAKOUT" H 6000 1634 50  0000 C CNN
-F 2 "arduino_sensors:DS3231_RTC_Breakout" H 6100 1100 50  0001 C CNN
-F 3 "https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/overview" H 6270 2150 50  0001 C CNN
-	1    6000 2100
-	1    0    0    -1  
-$EndComp
 NoConn ~ 6000 1700
-NoConn ~ 6500 1900
-NoConn ~ 6500 2200
 $Comp
 L power:+3.3V #PWR016
 U 1 1 5E3C79B6
@@ -299,8 +245,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 2000 5500 2000
 NoConn ~ 5500 2300
-Text Notes 8450 700  0    50   ~ 0
-MPU-9250 expansion ports \n(Barom expan. on 2nd shield)
 Text Notes 3200 3450 0    50   ~ 0
 UART expan. \non 2nd board
 Text Label 1900 3450 0    50   ~ 0
@@ -327,8 +271,6 @@ Wire Wire Line
 	4500 4450 4900 4450
 Wire Wire Line
 	4500 4550 4900 4550
-Wire Notes Line
-	8350 550  8350 1900
 NoConn ~ 3300 5950
 Wire Wire Line
 	5100 4150 5700 4150
@@ -556,29 +498,6 @@ F 3 "" H 6300 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
-U 1 1 60B2A420
-P 8150 1100
-F 0 "C6" H 8265 1146 50  0000 L CNN
-F 1 "0.1u" H 8265 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8188 950 50  0001 C CNN
-F 3 "~" H 8150 1100 50  0001 C CNN
-	1    8150 1100
-	1    0    0    -1  
-$EndComp
-Connection ~ 8150 950 
-$Comp
-L power:GND #PWR0118
-U 1 1 60B2A906
-P 8150 1250
-F 0 "#PWR0118" H 8150 1000 50  0001 C CNN
-F 1 "GND" H 8155 1077 50  0000 C CNN
-F 2 "" H 8150 1250 50  0001 C CNN
-F 3 "" H 8150 1250 50  0001 C CNN
-	1    8150 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 60BB0C16
 P 2300 1100
@@ -734,10 +653,6 @@ Wire Wire Line
 	2150 2450 1700 2450
 Wire Wire Line
 	2150 2800 1700 2800
-Wire Bus Line
-	1600 3150 2600 3150
-Wire Bus Line
-	1600 1000 1600 3150
 Text Label 1700 1100 0    50   ~ 0
 RTD_1
 Text Label 1700 1450 0    50   ~ 0
@@ -752,4 +667,119 @@ Text Label 1700 2450 0    50   ~ 0
 RTD_5
 Text Label 1700 2800 0    50   ~ 0
 RTD_6
+$Comp
+L power:GND #PWR0118
+U 1 1 60B2A906
+P 9150 1900
+F 0 "#PWR0118" H 9150 1650 50  0001 C CNN
+F 1 "GND" H 9155 1727 50  0000 C CNN
+F 2 "" H 9150 1900 50  0001 C CNN
+F 3 "" H 9150 1900 50  0001 C CNN
+	1    9150 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 9150 1600
+$Comp
+L Device:C C6
+U 1 1 60B2A420
+P 9150 1750
+F 0 "C6" H 9265 1796 50  0000 L CNN
+F 1 "0.1u" H 9265 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9188 1600 50  0001 C CNN
+F 3 "~" H 9150 1750 50  0001 C CNN
+	1    9150 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6500 2200
+NoConn ~ 6500 1900
+$Comp
+L arduino_sensors:DS3231_RTC_BREAKOUT H2
+U 1 1 5E3A5700
+P 6000 2100
+F 0 "H2" H 6000 1725 50  0000 C CNN
+F 1 "DS3231_RTC_BREAKOUT" H 6000 1634 50  0000 C CNN
+F 2 "arduino_sensors:DS3231_RTC_Breakout" H 6100 1100 50  0001 C CNN
+F 3 "https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/overview" H 6270 2150 50  0001 C CNN
+	1    6000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR030
+U 1 1 5E40D18E
+P 9150 1600
+F 0 "#PWR030" H 9150 1450 50  0001 C CNN
+F 1 "+3.3V" H 9165 1773 50  0000 C CNN
+F 2 "" H 9150 1600 50  0001 C CNN
+F 3 "" H 9150 1600 50  0001 C CNN
+	1    9150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5E40DAAE
+P 8850 2100
+F 0 "#PWR029" H 8850 1850 50  0001 C CNN
+F 1 "GND" H 8855 1927 50  0000 C CNN
+F 2 "" H 8850 2100 50  0001 C CNN
+F 3 "" H 8850 2100 50  0001 C CNN
+	1    8850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1600 9150 1600
+$Comp
+L arduino_sensors:MS5805-02BA01 U4
+U 1 1 60C5FA3E
+P 9850 1700
+F 0 "U4" H 10128 1638 50  0000 L CNN
+F 1 "MS5805-02BA01" H 10128 1547 50  0000 L CNN
+F 2 "arduino_sensors:MS5805-02BA01" H 9850 1900 50  0001 C CNN
+F 3 "https://au.mouser.com/datasheet/2/418/5/NG_DS_MS5805-02BA01_B-1130108.pdf" H 9850 1900 50  0001 C CNN
+	1    9850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1600 9500 1600
+Wire Wire Line
+	9500 1600 9500 2000
+Wire Wire Line
+	9500 2000 9700 2000
+$Comp
+L power:GND #PWR0119
+U 1 1 60C67A7F
+P 10000 2000
+F 0 "#PWR0119" H 10000 1750 50  0001 C CNN
+F 1 "GND" H 10005 1827 50  0000 C CNN
+F 2 "" H 10000 2000 50  0001 C CNN
+F 3 "" H 10000 2000 50  0001 C CNN
+	1    10000 2000
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 1500 0    50   ~ 0
+Barom:\nI2C 0x28
+Text Label 8300 1700 2    50   ~ 0
+SDA_MASTER
+Text Label 8300 1800 2    50   ~ 0
+SCL_MASTER
+$Comp
+L arduino_sensors:HSCDANN001BA2A3 U1
+U 1 1 5E40C3AA
+P 8650 1800
+F 0 "U1" H 8650 2267 50  0000 C CNN
+F 1 "HSCDANN001BA2A3" H 8650 2176 50  0000 C CNN
+F 2 "arduino_sensors:HSCDANN001BA2A3_DIP8" H 8650 1100 50  0001 C CNN
+F 3 "https://sensing.honeywell.com/honeywell-sensing-trustability-hsc-series-high-accurboard-mount-pressure-sensors-50099148-a-en.pdf" H 8700 1800 50  0001 C CNN
+	1    8650 1800
+	1    0    0    -1  
+$EndComp
+Text Label 9800 2000 3    50   ~ 0
+SDA_MASTER
+Text Label 9900 2000 3    50   ~ 0
+SCL_MASTER
+Wire Bus Line
+	1600 3150 2600 3150
+Wire Bus Line
+	1600 1000 1600 3150
+Text Notes 8200 1200 0    50   ~ 0
+Note: Populate either HSC or MS5805 sensor on PCB, not both
 $EndSCHEMATC

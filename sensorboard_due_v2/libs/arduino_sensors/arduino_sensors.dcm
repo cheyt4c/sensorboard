@@ -36,6 +36,10 @@ K mems magnetometer
 F https://core-electronics.com.au/sparkfun-imu-breakout-mpu-9250.html
 $ENDCMP
 #
+$CMP MS5805-02BA01
+F https://au.mouser.com/datasheet/2/418/5/NG_DS_MS5805-02BA01_B-1130108.pdf
+$ENDCMP
+#
 $CMP SD_Card_Breakout
 D SD Card Reader
 K connector SD

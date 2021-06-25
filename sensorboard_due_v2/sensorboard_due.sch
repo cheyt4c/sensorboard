@@ -148,7 +148,6 @@ NoConn ~ 1400 3650
 NoConn ~ 1600 3650
 NoConn ~ 2000 3650
 NoConn ~ 2100 3650
-NoConn ~ 2900 3650
 NoConn ~ 3000 3650
 NoConn ~ 3100 3650
 NoConn ~ 3400 3650
@@ -440,7 +439,7 @@ F1 "file60B83ABE.sch" 50
 $EndSheet
 Text GLabel 3000 1700 2    50   Input ~ 0
 RTD_1_CS
-Text GLabel 3000 1900 2    50   Input ~ 0
+Text GLabel 3000 1800 2    50   Input ~ 0
 RTD_2_CS
 Text Label 5600 6300 2    50   ~ 0
 SD_MOSI
@@ -460,17 +459,6 @@ Text GLabel 5700 6400 2    50   Input ~ 0
 MISO
 Text GLabel 5700 6500 2    50   Input ~ 0
 SCK
-$Comp
-L ARDUINO_DUE:ARDUINO_DUE_Shield_wSPI PCB1
-U 1 1 5E2A5E8E
-P 2900 4750
-F 0 "PCB1" H 2900 4750 50  0001 L BNN
-F 1 "ARDUINO_DUE" H 2900 4750 50  0001 L BNN
-F 2 "ARDUINO_DUE:ARDUINO_DUE_Shield_wSPI" H 2900 4750 50  0001 L BNN
-F 3 "" H 2900 4750 50  0001 C CNN
-	1    2900 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1900 3650 1900 3450
 $Comp
@@ -534,176 +522,6 @@ F 3 "" H 8900 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 60BB0C16
-P 2300 1100
-F 0 "JP1" H 2300 1305 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2300 1214 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 1100 50  0001 C CNN
-F 3 "~" H 2300 1100 50  0001 C CNN
-	1    2300 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 60BB135A
-P 2300 1450
-F 0 "JP2" H 2300 1655 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2300 1564 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 1450 50  0001 C CNN
-F 3 "~" H 2300 1450 50  0001 C CNN
-	1    2300 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 60BBB104
-P 2300 1800
-F 0 "JP3" H 2300 2005 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2300 1914 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 1800 50  0001 C CNN
-F 3 "~" H 2300 1800 50  0001 C CNN
-	1    2300 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 60BBB10A
-P 2300 2150
-F 0 "JP4" H 2300 2355 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2300 2264 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 2150 50  0001 C CNN
-F 3 "~" H 2300 2150 50  0001 C CNN
-	1    2300 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP5
-U 1 1 60BCBBB7
-P 2300 2450
-F 0 "JP5" H 2300 2655 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2300 2564 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 2450 50  0001 C CNN
-F 3 "~" H 2300 2450 50  0001 C CNN
-	1    2300 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP6
-U 1 1 60BCBBBD
-P 2300 2800
-F 0 "JP6" H 2300 3005 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2300 2914 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2300 2800 50  0001 C CNN
-F 3 "~" H 2300 2800 50  0001 C CNN
-	1    2300 2800
-	1    0    0    -1  
-$EndComp
-Entry Wire Line
-	2600 3150 2700 3250
-Entry Wire Line
-	2500 3150 2600 3250
-Entry Wire Line
-	2400 3150 2500 3250
-Entry Wire Line
-	2300 3150 2400 3250
-Wire Wire Line
-	2700 3650 2700 3250
-Wire Wire Line
-	2600 3250 2600 3650
-Wire Wire Line
-	2500 3650 2500 3250
-Wire Wire Line
-	2400 3650 2400 3250
-Entry Wire Line
-	1700 3150 1800 3250
-Entry Wire Line
-	1600 3150 1700 3250
-Wire Wire Line
-	1800 3250 1800 3650
-Wire Wire Line
-	1700 3650 1700 3250
-Text Label 2700 3600 1    50   ~ 0
-RTD_1
-Text Label 2600 3600 1    50   ~ 0
-RTD_2
-Text Label 2500 3600 1    50   ~ 0
-RTD_3
-Text Label 2400 3600 1    50   ~ 0
-RTD_4
-Text Label 1800 3600 1    50   ~ 0
-RTD_5
-Text Label 1700 3600 1    50   ~ 0
-RTD_6
-Wire Wire Line
-	3000 1700 2900 1700
-Wire Wire Line
-	2900 1700 2900 1100
-Wire Wire Line
-	2900 1700 2900 1800
-Connection ~ 2900 1700
-Wire Wire Line
-	2450 1100 2900 1100
-Wire Wire Line
-	2450 1800 2900 1800
-Connection ~ 2900 1800
-Wire Wire Line
-	2900 1800 2900 2450
-Wire Wire Line
-	2450 2450 2900 2450
-Wire Wire Line
-	2450 1450 2750 1450
-Wire Wire Line
-	2750 1450 2750 1900
-Wire Wire Line
-	2450 2800 2750 2800
-Wire Wire Line
-	2450 2150 2750 2150
-Connection ~ 2750 2150
-Wire Wire Line
-	2750 2150 2750 2800
-Wire Wire Line
-	3000 1900 2750 1900
-Connection ~ 2750 1900
-Wire Wire Line
-	2750 1900 2750 2150
-Entry Wire Line
-	1600 1000 1700 1100
-Entry Wire Line
-	1600 1350 1700 1450
-Entry Wire Line
-	1600 1700 1700 1800
-Entry Wire Line
-	1600 2050 1700 2150
-Entry Wire Line
-	1600 2350 1700 2450
-Entry Wire Line
-	1600 2700 1700 2800
-Wire Wire Line
-	2150 1100 1700 1100
-Wire Wire Line
-	2150 1450 1700 1450
-Wire Wire Line
-	2150 1800 1700 1800
-Wire Wire Line
-	2150 2450 1700 2450
-Wire Wire Line
-	2150 2800 1700 2800
-Text Label 1700 1100 0    50   ~ 0
-RTD_1
-Text Label 1700 1450 0    50   ~ 0
-RTD_2
-Text Label 1700 1800 0    50   ~ 0
-RTD_3
-Wire Wire Line
-	2150 2150 1700 2150
-Text Label 1700 2150 0    50   ~ 0
-RTD_4
-Text Label 1700 2450 0    50   ~ 0
-RTD_5
-Text Label 1700 2800 0    50   ~ 0
-RTD_6
-$Comp
 L power:GND #PWR0119
 U 1 1 60C50F95
 P 8850 4600
@@ -728,9 +546,6 @@ NoConn ~ 5100 4450
 NoConn ~ 5100 4550
 NoConn ~ 5100 4650
 NoConn ~ 5100 4750
-NoConn ~ 2700 5950
-NoConn ~ 2800 5950
-NoConn ~ 2900 5950
 NoConn ~ 3000 5950
 NoConn ~ 3100 5950
 NoConn ~ 3200 5950
@@ -763,10 +578,6 @@ F 3 "" H 9500 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9200 1650 8900 1650
-Text Label 2800 3600 1    50   ~ 0
-MIC
-Wire Wire Line
-	2800 3650 2800 3600
 Text Label 1200 3650 1    50   ~ 0
 SCL_SLAVE
 Text Label 1300 3650 1    50   ~ 0
@@ -860,8 +671,27 @@ Text Label 3800 7250 2    50   ~ 0
 SCL_MASTER
 Text Label 3800 7600 2    50   ~ 0
 SCL_SLAVE
-Wire Bus Line
-	1600 3150 2600 3150
-Wire Bus Line
-	1600 1000 1600 3150
+Text GLabel 2900 3650 1    50   Input ~ 0
+RTD_1_CS
+Text GLabel 2800 3650 1    50   Input ~ 0
+RTD_2_CS
+Text GLabel 2400 3650 1    50   Input ~ 0
+RTD_3_CS
+Text GLabel 2900 5950 3    50   Input ~ 0
+RTD_4_CS
+$Comp
+L ARDUINO_DUE:ARDUINO_DUE_Shield_wSPI PCB1
+U 1 1 5E2A5E8E
+P 2900 4750
+F 0 "PCB1" H 2900 4750 50  0001 L BNN
+F 1 "ARDUINO_DUE" H 2900 4750 50  0001 L BNN
+F 2 "ARDUINO_DUE:ARDUINO_DUE_Shield_wSPI" H 2900 4750 50  0001 L BNN
+F 3 "" H 2900 4750 50  0001 C CNN
+	1    2900 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 5950 3    50   Input ~ 0
+RTD_5_CS
+Text GLabel 2700 5950 3    50   Input ~ 0
+RTD_6_CS
 $EndSCHEMATC
